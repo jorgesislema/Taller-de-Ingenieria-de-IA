@@ -15,7 +15,7 @@
 
 Dibujo desde que tengo memoria. Empece copiando personajes de anime en cuadernos del cole y ahora estoy metiendome en el mundo digital: tableta grafica, pixel art, y herramientas de IA que me vuelan la cabeza.
 
-No, la IA no dibuja por mi. Pero me ayuda a generar ideas, probar paletas de colores, hacer variaciones de un disenio en segundos. Es como tener un asistente que nunca se cansa de darte opciones.
+No, la IA no dibuja por mi. Pero me ayuda a generar ideas, probar paletas de colores, hacer variaciones de un diseño en segundos. Es como tener un asistente que nunca se cansa de darte opciones.
 
 ---
 
