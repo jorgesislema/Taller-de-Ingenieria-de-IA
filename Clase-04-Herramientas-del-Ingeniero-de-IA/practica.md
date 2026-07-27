@@ -33,7 +33,7 @@ Marca que tengas todo listo:
 
 Elegi el que mas se parezca a vos. No los copies exactos: son ideas para que veas la estructura. Cambia todo lo que quieras. Hacelo tuyo.
 
-> **Tip:** Si tenes entre 12 y 20 anios, los ejemplos 1 al 5 son para vos. Si tenes +30, mira el ejemplo 6.
+> **Tip:** Si tenes entre 12 y 20 años, los ejemplos 1 al 5 son para vos. Si tenes +30, mira el ejemplo 6.
 
 ---
 
@@ -185,7 +185,7 @@ Este mismo repo. Creado 100% con IA. Mi carta de presentacion para cuando alguie
 
 Dibujo desde que tengo memoria. Empece copiando personajes de anime en cuadernos del cole y ahora estoy metiendome en el mundo digital: tableta grafica, pixel art, y herramientas de IA que me vuelan la cabeza.
 
-No, la IA no dibuja por mi. Pero me ayuda a generar ideas, probar paletas de colores, hacer variaciones de un disenio en segundos. Es como tener un asistente que nunca se cansa de darte opciones.
+No, la IA no dibuja por mi. Pero me ayuda a generar ideas, probar paletas de colores, hacer variaciones de un diseño en segundos. Es como tener un asistente que nunca se cansa de darte opciones.
 
 ---
 
@@ -402,9 +402,9 @@ Este repo. Aca documento TODO: proyectos que funcionan, proyectos que fallaron, 
 
 ## 📖 Mi historia
 
-Tengo [tu edad] anios y toda una carrera en [tu rubro: comercio, administracion, salud, educacion, etc.]. Pero el mundo cambio. La IA llego para quedarse y decidi no mirarla de afuera: quiero entenderla, usarla y aplicarla en mi trabajo.
+Tengo [tu edad] años y toda una carrera en [tu rubro: comercio, administracion, salud, educacion, etc.]. Pero el mundo cambio. La IA llego para quedarse y decidi no mirarla de afuera: quiero entenderla, usarla y aplicarla en mi trabajo.
 
-Me anote en el Taller de Especializacion en IA para aprender desde cero, sin verguenza, haciendo preguntas basicas. Porque prefiero ser principiante hoy que obsoleto maniana.
+Me anote en el Taller de Especializacion en IA para aprender desde cero, sin verguenza, haciendo preguntas basicas. Porque prefiero ser principiante hoy que obsoleto mañana.
 
 ---
 
@@ -425,7 +425,7 @@ Me anote en el Taller de Especializacion en IA para aprender desde cero, sin ver
 | [Habilidad 1: ej. atencion al cliente] | Diseniando agentes de IA que responden consultas |
 | [Habilidad 2: ej. organizacion] | Automatizando procesos con scripts basicos |
 | [Habilidad 3: ej. ventas] | Generando contenido y copys de venta con IA |
-| [Habilidad 4: ej. ensenianza] | Creando materiales educativos con ayuda de IA |
+| [Habilidad 4: ej. enseñanza] | Creando materiales educativos con ayuda de IA |
 
 ---
 
