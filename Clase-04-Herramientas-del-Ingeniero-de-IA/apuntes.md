@@ -2,6 +2,7 @@
 
 > Teoria central de la clase. Las guias practicas de cada herramienta estan en archivos separados para que no te pierdas:
 > - [Ingenieria de Prompt (resumen)](ingenieria-de-prompt.md)
+> - [Guia Avanzada (API, testing, token budget)](avanzado.md)
 > - [VSCode — Guia de uso](vscode.md)
 > - [Git y GitHub — Guia practica](github.md)
 > - [Markdown — Guia de sintaxis](markdown.md)
@@ -15,9 +16,9 @@
 
 **Vibe Coding** es programar describiendo lo que queres en lenguaje natural, y dejar que la IA genere el codigo por vos.
 
-No necesitas saber Python, JavaScript, ni HTML. Necesitas saber **describir exactamente que queres que el programa haga**. La IA traduce tu espaniol a codigo.
+No necesitas saber Python, JavaScript, ni HTML. Necesitas saber **describir exactamente que queres que el programa haga**. La IA traduce tu español a codigo.
 
-**Analogia:** Es como pedirle a un arquitecto que disenie tu casa. Vos no sabes de estructuras ni de calculo de cargas. Pero sabes que queres 3 dormitorios, cocina integrada, y un patio con parrilla. El arquitecto traduce tus deseos a planos tecnicos. Con Vibe Coding, vos sos el cliente y la IA es el arquitecto del codigo.
+**Analogia:** Es como pedirle a un arquitecto que diseñe tu casa. Vos no sabes de estructuras ni de calculo de cargas. Pero sabes que queres 3 dormitorios, cocina integrada, y un patio con parrilla. El arquitecto traduce tus deseos a planos tecnicos. Con Vibe Coding, vos sos el cliente y la IA es el arquitecto del codigo.
 
 ### Por que funciona
 
@@ -72,7 +73,7 @@ Cada plataforma de IA tiene su forma de crear agentes. Aca van las recetas para 
 4. Te aparece un split-screen:
    - **Izquierda (Create):** Describis tu agente en lenguaje natural
    - **Derecha (Configure):** Ajustes finos manuales
-5. En la pestania **Configure**:
+5. En la pestaña **Configure**:
    - **Nombre:** El nombre de tu agente
    - **Descripcion:** Que hace, para que sirve
    - **Instrucciones:** El system prompt (el "manual de procedimientos")
@@ -85,11 +86,11 @@ Cada plataforma de IA tiene su forma de crear agentes. Aca van las recetas para 
 **Ejemplo de instrucciones para "Asistente de Portfolio":**
 
 ```markdown
-Eres un diseniador de portfolios profesional con 10 anios de experiencia.
+Eres un diseñador de portfolios profesional con 10 años de experiencia.
 Ayudas a estudiantes a crear su pagina de presentacion en GitHub.
 
 Reglas:
-- Siempre en espaniol, tono profesional pero amigable.
+- Siempre en español, tono profesional pero amigable.
 - Pregunta primero: nombre, profesion, 3 proyectos destacados.
 - Genera README.md con: Titulo, Sobre mi, Habilidades, Proyectos, Contacto.
 - Disenio limpio, profesional, apto para GitHub.
@@ -133,10 +134,10 @@ Reglas:
 |---------------|----------------|-------------------|---------------|
 | Plan necesario | Plus ($20/mes) | Pro ($20/mes) | AI Premium ($20/mes) |
 | Archivos de conocimiento | Si | Si | Si |
-| Busqueda web | Si | No nativa | Si |
+| Busqueda web | Si | Si (desde 2025) | Si |
 | Imagenes | Si (DALL-E) | No | Si (Imagen) |
 | Publico / compartible | Si (tienda GPT) | No (privado) | No (privado) |
-| Ejecucion de codigo | Si | Si (artifacts) | Si |
+| Ejecucion de codigo | Si (Code Interpreter) | No (solo analisis estatico) | Si |
 
 > **Para el taller:** Cualquiera de los 3 funciona. Si no tenes plan de pago, podes hacer prompts normales (sin agente fijo). El resultado es similar, solo que tenes que repetir el contexto en cada conversacion nueva.
 
@@ -152,7 +153,7 @@ VSCode, Git, Markdown y Opencode no son "extras". Son el banco de trabajo. Asi c
 
 ### Sabe crear agentes, no solo usar chats
 
-Cualquiera puede abrir ChatGPT y hacer una pregunta. El Ingeniero de IA **crea agentes con personalidad, reglas y herramientas definidas** para resolver problemas especificos. Un agente bien diseniado es como un empleado virtual que trabaja 24/7 siguiendo tus instrucciones exactas.
+Cualquiera puede abrir ChatGPT y hacer una pregunta. El Ingeniero de IA **crea agentes con personalidad, reglas y herramientas definidas** para resolver problemas especificos. Un agente bien diseñado es como un empleado virtual que trabaja 24/7 siguiendo tus instrucciones exactas.
 
 ### Entiende los loops
 
