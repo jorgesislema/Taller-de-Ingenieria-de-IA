@@ -140,7 +140,7 @@ GitHub Desktop es la version con botones de Git. No necesitas comandos.
 └─────────────────────────────────────────────┘
 ```
 
-### Aniadir un repo local
+### Añadir un repo local
 
 Si ya tenes una carpeta con Git iniciado:
 
