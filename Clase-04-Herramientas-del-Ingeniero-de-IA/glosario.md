@@ -10,6 +10,10 @@
 Una IA a la que le asignas un rol fijo, instrucciones permanentes y posiblemente herramientas extra. Responde siempre dentro de ese personaje y con esas reglas.
 **Analogia:** Es como un empleado con un manual de procedimientos bajo el brazo. No importa quien le hable ni que le pregunte: responde segun el manual.
 
+### Artifacts (de Claude)
+Funcion de Claude que renderiza codigo (HTML, React, SVG) en una ventana aparte dentro del chat. No es ejecucion de codigo real: es una vista previa interactiva del frontend.
+**Analogia:** Es como el "modo presentacion" de un PowerPoint. Ves como queda, pero no estas ejecutando las formulas de Excel que generaron los graficos.
+
 ---
 
 ## C
@@ -25,6 +29,14 @@ La pantalla negra con letras blancas donde escribis comandos. Sin ventanas, sin 
 ### Commit
 Una "foto" del estado de tu proyecto que Git guarda para siempre con un mensaje que explica que cambiaste y por que.
 **Analogia:** Guardar la partida en un videojuego antes de pelear contra el jefe final. Si algo sale mal, cargas la partida y volves a ese punto exacto.
+
+---
+
+## D
+
+### DAW (Digital Audio Workstation)
+Software para producir, grabar, editar y mezclar musica. Ejemplos: FL Studio, Ableton Live, GarageBand.
+**Analogia:** Es el taller completo de un carpintero, pero para sonido. Tenes la sierra (sintetizadores), el martillo (bateria electronica), la lija (efectos y mezcla), todo en un mismo programa.
 
 ---
 
@@ -55,6 +67,14 @@ Dos significados en esta clase:
 1. La arquitectura de IA detras de ChatGPT (el "motor")
 2. Un agente personalizado creado en ChatGPT (GPTs)
 **Analogia:** GPT es como el motor de un auto. Los GPTs son como modelos distintos de auto que usan ese mismo motor.
+
+---
+
+## I
+
+### Iteracion
+Proceso de repetir una accion mejorandola en cada ciclo. En IA: envias un prompt, ves el resultado, pedis ajustes, repetis hasta lograr lo que buscas.
+**Analogia:** Es como ajustar la receta de una tarta. La primera nunca sale perfecta. La segunda le pones menos sal. La tercera la dejas 5 minutos mas en el horno. A la quinta, es la tarta que queres.
 
 ---
 
@@ -98,7 +118,7 @@ Prompting donde le das a la IA un solo ejemplo del formato que queres antes del 
 
 ### Opencode
 Herramienta de IA que funciona en la terminal. Le escribis en lenguaje natural lo que necesitas y te genera codigo, explica errores o ejecuta comandos.
-**Analogia:** Un ingeniero senior sentado al lado tuyo mirando tu pantalla. Vos le decis en espaniol que queres hacer, y el te da el codigo o te explica como.
+**Analogia:** Un ingeniero senior sentado al lado tuyo mirando tu pantalla. Vos le decis en español que queres hacer, y el te da el codigo o te explica como.
 
 ---
 
@@ -106,7 +126,7 @@ Herramienta de IA que funciona en la terminal. Le escribis en lenguaje natural l
 
 ### Prompt
 La instruccion que le das a una IA. Todo lo que escribis antes de presionar Enter. La calidad de la respuesta depende de la calidad del prompt.
-**Analogia:** El brief que le das a un diseniador freelancer. "Haceme un logo azul moderno" produce algo muy distinto a "Haceme un logo".
+**Analogia:** El brief que le das a un diseñador freelancer. "Haceme un logo azul moderno" produce algo muy distinto a "Haceme un logo".
 
 ### Push
 Subir tus commits locales al repositorio remoto en GitHub. Tus cambios se vuelven visibles para todos.
@@ -121,7 +141,7 @@ Carpeta de proyecto vigilada por Git. Contiene tu codigo, todo el historial de c
 **Analogia:** Una caja fuerte con un libro de actas. Todo lo que entra y sale queda registrado: que, quien, cuando y por que.
 
 ### Rol (en un prompt)
-La personalidad o expertise que le asignas a la IA ("Eres un contador con 20 anios de experiencia"). Define el tono y profundidad de las respuestas.
+La personalidad o expertise que le asignas a la IA ("Eres un contador con 20 años de experiencia"). Define el tono y profundidad de las respuestas.
 **Analogia:** Elegir a que profesional consultar. Un abogado, un medico y un mecanico te van a responder distinto la misma pregunta.
 
 ---
@@ -131,6 +151,10 @@ La personalidad o expertise que le asignas a la IA ("Eres un contador con 20 ani
 ### Skill (Habilidad)
 Capacidad extra que le das a un agente para que haga cosas que normalmente no haria: buscar en internet, leer PDFs, ejecutar codigo, conectarse a APIs.
 **Analogia:** Las herramientas del cinturon de Batman. El agente es Batman. Las skills son el batarang, la pistola de garfio, la capa. Sin skills, es solo un tipo disfrazado.
+
+### Smarkdown (Structured Markdown)
+Tecnica de escribir prompts usando sintaxis Markdown (`##`, `-`, `|`) para darle jerarquia a las instrucciones. La IA reconoce la estructura y responde con mas precision.
+**Analogia:** Darle instrucciones a la IA en Markdown es como entregarle un formulario ordenado en vez de una servilleta arrugada con garabatos.
 
 ### System Prompt (Prompt de Sistema)
 La instruccion "invisible" que define como se comporta un agente siempre. Esta pegada a cada conversacion sin que el usuario la vea ni la repita.
@@ -150,7 +174,7 @@ Programa que te permite controlar tu computadora con comandos de texto. En Windo
 
 ### Vibe Coding
 Estilo de programacion donde describis lo que queres en lenguaje natural y la IA genera el codigo. No necesitas saber programar para empezar.
-**Analogia:** Pedirle a un arquitecto que disenie tu casa describiendosela con palabras en vez de dibujar los planos vos mismo.
+**Analogia:** Pedirle a un arquitecto que diseñe tu casa describiendosela con palabras en vez de dibujar los planos vos mismo.
 
 ---
 
