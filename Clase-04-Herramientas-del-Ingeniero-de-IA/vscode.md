@@ -18,7 +18,7 @@ Aprende estos 10 atajos. Te van a ahorrar horas.
 | `Ctrl+S` | `Cmd+S` | Guardar archivo |
 | `Ctrl+Z` | `Cmd+Z` | Deshacer |
 | `Ctrl+Shift+V` | `Cmd+Shift+V` | Previsualizar Markdown (abri el archivo `.md` primero) |
-| `Ctrl+K V` | `Cmd+K V` | Previsualizar Markdown en otra pestania (mejor) |
+| `Ctrl+K V` | `Cmd+K V` | Previsualizar Markdown en otra pestaña (mejor) |
 | `Ctrl+Shift+E` | `Cmd+Shift+E` | Ir al explorador de archivos |
 | `Ctrl+F` | `Cmd+F` | Buscar texto en el archivo actual |
 | `Ctrl+Shift+F` | `Cmd+Shift+F` | Buscar texto en todos los archivos del proyecto |
@@ -74,7 +74,7 @@ Para esta clase, instala (opcional):
 |-----------|---------------|
 | **Markdown All in One** | Atajos para escribir Markdown mas rapido |
 | **Markdown Preview GitHub Styling** | La preview de Markdown se ve como en GitHub |
-| **Spanish Language Pack** | VSCode en espaniol |
+| **Spanish Language Pack** | VSCode en español |
 
 Para instalar: barra lateral izquierda → icono de cuadrados → buscar → Install.
 
@@ -85,7 +85,7 @@ Para instalar: barra lateral izquierda → icono de cuadrados → buscar → Ins
 Util cuando queres ver el README.md de ejemplo y escribir el tuyo al mismo tiempo.
 
 1. Abri el primer archivo
-2. `Ctrl+\` (o clic derecho en la pestania → Split Right)
+2. `Ctrl+\` (o clic derecho en la pestaña → Split Right)
 3. Abri el segundo archivo en el panel nuevo
 
 ---
