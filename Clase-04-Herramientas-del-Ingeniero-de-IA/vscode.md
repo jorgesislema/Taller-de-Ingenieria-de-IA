@@ -1,3 +1,5 @@
+https://drive.google.com/drive/folders/1ORi48lTXyRGp8lBcvZSqarpk59JvIzaI?usp=sharing
+
 # VSCode — Guia de uso
 
 > Ya instalaste VSCode en la Clase 1. Esta guia es para que aprendas a **usarlo de verdad**, no solo a abrirlo.
