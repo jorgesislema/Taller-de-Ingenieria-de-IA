@@ -13,9 +13,9 @@
 
 ## 📖 Mi historia
 
-Tengo [tu edad] anios y toda una carrera en [tu rubro: comercio, administracion, salud, educacion, etc.]. Pero el mundo cambio. La IA llego para quedarse y decidi no mirarla de afuera: quiero entenderla, usarla y aplicarla en mi trabajo.
+Tengo [tu edad] años y toda una carrera en [tu rubro: comercio, administracion, salud, educacion, etc.]. Pero el mundo cambio. La IA llego para quedarse y decidi no mirarla de afuera: quiero entenderla, usarla y aplicarla en mi trabajo.
 
-Me anote en el Taller de Especializacion en IA para aprender desde cero, sin verguenza, haciendo preguntas basicas. Porque prefiero ser principiante hoy que obsoleto maniana.
+Me anote en el Taller de Especializacion en IA para aprender desde cero, sin verguenza, haciendo preguntas basicas. Porque prefiero ser principiante hoy que obsoleto mañana.
 
 ---
 
@@ -36,7 +36,7 @@ Me anote en el Taller de Especializacion en IA para aprender desde cero, sin ver
 | [Habilidad 1: ej. atencion al cliente] | Diseniando agentes de IA que responden consultas |
 | [Habilidad 2: ej. organizacion] | Automatizando procesos con scripts basicos |
 | [Habilidad 3: ej. ventas] | Generando contenido y copys de venta con IA |
-| [Habilidad 4: ej. ensenianza] | Creando materiales educativos con ayuda de IA |
+| [Habilidad 4: ej. enseñanza] | Creando materiales educativos con ayuda de IA |
 
 ---
 
