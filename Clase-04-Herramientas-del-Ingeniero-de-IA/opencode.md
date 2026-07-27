@@ -1,6 +1,6 @@
 # Opencode — Instalacion y manual
 
-> Opencode es tu copiloto de IA en la terminal. Le escribis en espaniol lo que necesitas y te genera codigo, explica errores, crea archivos o ejecuta comandos.
+> Opencode es tu copiloto de IA en la terminal. Le escribis en español lo que necesitas y te genera codigo, explica errores, crea archivos o ejecuta comandos.
 >
 > Los instaladores (Node.js + Opencode) estan en el pendrive. Esta guia te muestra como instalarlos paso a paso.
 
