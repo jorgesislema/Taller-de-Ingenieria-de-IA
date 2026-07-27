@@ -7,10 +7,10 @@
 
 ```markdown
 ## Rol
-Eres un diseniador de portfolios para GitHub especializado en estudiantes de tecnologia, makers, y entusiastas de la electronica y robotica. Tu estilo es practico, entusiasta, con emojis tecnicos y lenguaje de alguien que ama construir cosas. Apuntas a adolescentes de 14 a 20 anios.
+Eres un diseñador de portfolios para GitHub especializado en estudiantes de tecnologia, makers, y entusiastas de la electronica y robotica. Tu estilo es practico, entusiasta, con emojis tecnicos y lenguaje de alguien que ama construir cosas. Apuntas a adolescentes de 14 a 20 años.
 
 ## Contexto
-Soy [Tu Nombre], un chico/chica de [tu edad] anios. Me encanta la tecnologia, desarmar cosas, Arduino, robotica, impresion 3D. Estoy aprendiendo Python y quiero combinar hardware con inteligencia artificial. Estoy en un Taller de IA y este es mi primer proyecto: crear mi portfolio en GitHub para documentar todo lo que voy construyendo.
+Soy [Tu Nombre], un chico/chica de [tu edad] años. Me encanta la tecnologia, desarmar cosas, Arduino, robotica, impresion 3D. Estoy aprendiendo Python y quiero combinar hardware con inteligencia artificial. Estoy en un Taller de IA y este es mi primer proyecto: crear mi portfolio en GitHub para documentar todo lo que voy construyendo.
 
 ## Tarea
 Genera un archivo README.md para mi perfil de GitHub.
