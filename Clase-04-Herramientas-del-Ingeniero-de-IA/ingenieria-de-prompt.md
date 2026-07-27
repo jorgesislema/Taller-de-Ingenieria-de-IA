@@ -23,10 +23,10 @@ Todo prompt efectivo puede tener hasta 5 componentes. No todos son obligatorios 
 
 | Elemento | Que es | Obligatorio | Ejemplo |
 |----------|--------|-------------|---------|
-| **Rol** | Que personaje o experto queres que sea la IA | Recomendado | "Eres un diseniador senior con 15 anios de experiencia" |
+| **Rol** | Que personaje o experto queres que sea la IA | Recomendado | "Eres un diseñador senior con 15 años de experiencia" |
 | **Contexto** | La situacion, quien sos vos | Muy recomendado | "Soy estudiante del taller de IA, armando mi portfolio" |
 | **Tarea** | Que queres que haga, con verbo concreto | **SI, siempre** | "Redacta / Genera / Explica / Analiza / Lista" |
-| **Restricciones** | Limites: formato, tono, longitud | Recomendado | "Maximo 200 palabras, tono profesional, en espaniol" |
+| **Restricciones** | Limites: formato, tono, longitud | Recomendado | "Maximo 200 palabras, tono profesional, en español" |
 | **Ejemplo** | Muestra del output esperado | Opcional pero muy util | "Aca hay un ejemplo de como quiero que se vea..." |
 
 ### Verbos de tarea mas utiles
@@ -34,7 +34,7 @@ Todo prompt efectivo puede tener hasta 5 componentes. No todos son obligatorios 
 | Si queres... | Usa este verbo |
 |-------------|----------------|
 | Un texto nuevo | **Redacta / Escribi / Crea** |
-| Explicar algo complejo | **Explica como si tuviera 12 anios** |
+| Explicar algo complejo | **Explica como si tuviera 12 años** |
 | Un listado | **Lista / Enumera / Dame 5 opciones** |
 | Analizar | **Analiza / Evalua / Identifica puntos clave** |
 | Resumir | **Resumi en X parrafos** |
@@ -95,7 +95,7 @@ Copiala, edita lo que necesites, borra lo que no uses:
 
 ```markdown
 ## Rol
-Eres [profesion/personaje] con [X anios] de experiencia en [area].
+Eres [profesion/personaje] con [X años] de experiencia en [area].
 
 ## Contexto
 [Situacion. Quien sos vos. Que problema estas resolviendo.]
@@ -108,7 +108,7 @@ Eres [profesion/personaje] con [X anios] de experiencia en [area].
 - Tono: [formal / informal / simple / tecnico]
 - Longitud: [maximo X palabras / X parrafos]
 - No incluir: [X, Y, Z]
-- Idioma: [espaniol]
+- Idioma: [español]
 
 ## Ejemplo de output esperado
 [Opcional: muestra del formato que queres]
@@ -143,7 +143,7 @@ Un **agente** es una IA a la que le asignas un rol fijo y una serie de instrucci
 
 ```markdown
 ## Rol
-Eres [profesion/personaje] con [X anios] de experiencia en [area].
+Eres [profesion/personaje] con [X años] de experiencia en [area].
 
 ## Contexto
 Tus usuarios son [descripcion]. El objetivo es [objetivo].
@@ -272,7 +272,7 @@ Un prompt de 500 palabras sin estructura es peor que uno de 100 palabras con Sma
 ### ANTES de enviar
 - [ ] Tiene al menos Tarea + Restricciones?
 - [ ] Use mi AlterEgo? (sin datos personales reales)
-- [ ] Si esto se publica maniana en un diario, estaria bien?
+- [ ] Si esto se publica mañana en un diario, estaria bien?
 
 ### DESPUES de recibir
 - [ ] Lei la respuesta completa (no solo el primer parrafo)?
@@ -282,7 +282,176 @@ Un prompt de 500 palabras sin estructura es peor que uno de 100 palabras con Sma
 
 ---
 
-## 10. Queres profundizar?
+## 10. Parametros que controlan la creatividad
+
+Si usas la API directamente (OpenAI, Anthropic, Gemini) en vez del chat web, tenes acceso a parametros que cambian radicalmente el comportamiento del modelo. Son el equivalente a los "knobs" de un sintetizador: no son magia, son matematicas.
+
+### Los 7 parametros esenciales
+
+| Parametro | Rango | Que hace | Cuando ajustarlo |
+|-----------|-------|----------|-----------------|
+| `temperature` | 0.0 – 2.0 | Escala la aleatoriedad: 0 = deterministico, 2 = caotico | 0 para codigo/facturas/extraccion. 0.7–1.0 para creatividad. **Nunca uses temperature y top_p juntos.** |
+| `top_p` | 0.0 – 1.0 | Nucleus sampling: solo considera tokens cuya probabilidad acumulada llega a X% | Alternativa a temperature. 0.1 = muy predecible, 0.9 = diverso |
+| `frequency_penalty` | -2.0 – 2.0 | Penaliza tokens que ya aparecieron (reduce repeticion) | >0 cuando la IA se repite en loops largos |
+| `presence_penalty` | -2.0 – 2.0 | Penaliza tokens ya usados aunque sea una sola vez | >0 para forzar diversidad tematica |
+| `max_tokens` | 1 – limite modelo | Corta la respuesta a X tokens de output | Controlar costo. Recorda: output tokens tambien se facturan (Clase 3) |
+| `stop` | strings | Detiene la generacion al encontrar la secuencia | Limpiar outputs: `stop=["\n", "###"]` para respuestas breves |
+| `logit_bias` | -100 a 100 | Fuerza o prohibe tokens especificos por ID | Evitar palabras prohibidas, forzar formato JSON, sesgar vocabulario |
+
+### Formula practica: el "triangulo de sampling"
+
+```
+¿Que estoy generando?
+├── Codigo / Datos estructurados → temperature=0, top_p=N/A
+├── Texto creativo (marketing, guiones) → temperature=0.7, frequency_penalty=0.3
+├── Brainstorming / Ideacion → temperature=1.0, presence_penalty=0.5
+└── Respuestas factuales (QA, soporte) → temperature=0.2, top_p=0.3
+```
+
+### Anti-Patron #1: Subir temperature para "arreglar" un mal prompt
+
+```python
+# MAL: El prompt es vago, subis temperature esperando magia
+response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[{"role": "user", "content": "escribime algo lindo"}],
+    temperature=1.8  # La IA va a delirar, no a "inspirarse"
+)
+
+# BIEN: Mejoras el prompt primero, ajustas parametros despues
+response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[{"role": "user", "content": """Escribi un poema de 4 versos
+    sobre un programador que debuggea a las 3 AM.
+    Tono: melancolico pero con humor. Rima consonante."""}],
+    temperature=0.8,
+    frequency_penalty=0.2
+)
+```
+
+### Anti-Patron #2: Usar temperature y top_p simultaneamente
+
+La documentacion de OpenAI lo dice explicito: **generalmente no combines temperature con top_p**. Son dos formas distintas de controlar el sampling. Usar ambas es como ponerle dos termostatos al mismo ambiente: generas comportamiento impredecible.
+
+> **Regla practica:** Elegi uno. Temperature es mas intuitivo para empezar. Top_p te da mas control fino cuando sabes exactamente que distribucion de tokens queres.
+
+### Ejemplo: forzar formato de salida con logit_bias
+
+```python
+# Fuerza a la IA a empezar la respuesta con "{" (token ID 123... varía por modelo)
+# Util para garantizar output JSON sin tener que pedirlo en el prompt 50 veces
+response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[{"role": "user", "content": "Clasifica este texto como POSITIVO, NEGATIVO o NEUTRO."}],
+    logit_bias={12345: 100},  # +100 = casi garantiza que aparezca ese token
+    max_tokens=50
+)
+```
+
+---
+
+## 11. Token Budget y Chunking: no te quedes sin contexto
+
+El contexto de un LLM es finito. Cada modelo tiene su ventana maxima:
+
+| Modelo | Ventana de contexto | Equivalente aproximado |
+|--------|---------------------|----------------------|
+| GPT-4o | 128k tokens | ~300 paginas de un libro |
+| GPT-4o-mini | 128k tokens | Idem, mas barato y rapido |
+| Claude 3.5 Sonnet | 200k tokens | ~500 paginas |
+| Gemini 1.5 Pro | 1M tokens | ~2500 paginas (una biblioteca chica) |
+
+### El problema del "contexto perdido"
+
+Cuando una conversacion crece, los tokens mas viejos salen de la ventana. La IA literalmente **se olvida** de lo que dijiste al principio. Esto se llama *context window overflow*.
+
+### Estrategia 1: Rolling summary (resumen rotativo)
+
+```python
+# Pseudocodigo: cada N turnos, resumi la conversacion y reemplaza el historial
+def manage_context(messages, max_tokens=8000):
+    token_count = count_tokens(messages)
+
+    if token_count < max_tokens * 0.7:  # 70% de ocupacion
+        return messages  # No hagas nada
+
+    # Separa mensajes antiguos de los recientes
+    old_messages = messages[:-6]   # Todo menos los ultimos 3 pares (6 mensajes)
+    recent_messages = messages[-6:]  # Ultimos 3 intercambios
+
+    # Pide un resumen de lo viejo
+    summary = llm_summarize(old_messages)
+    summary_msg = {"role": "system", "content": f"[Resumen de la conversacion anterior]: {summary}"}
+
+    return [summary_msg] + recent_messages  # Contexto comprimido
+```
+
+### Estrategia 2: Sliding window (ventana deslizante)
+
+Para tareas de analisis de documentos largos (PDFs, logs, codigo fuente):
+
+```python
+def sliding_window_chunk(text, chunk_size=4000, overlap=500):
+    """Divide texto en chunks de chunk_size tokens con overlap entre ellos."""
+    words = text.split()
+    chunks = []
+    start = 0
+    while start < len(words):
+        chunk = " ".join(words[start:start + chunk_size])
+        chunks.append(chunk)
+        start += (chunk_size - overlap)  # El overlap evita cortar ideas a la mitad
+    return chunks
+
+# Uso tipico: analizar un PDF de 200 paginas
+chunks = sliding_window_chunk(pdf_text, chunk_size=4000, overlap=500)
+results = []
+for chunk in chunks:
+    response = llm_analyze(chunk)  # Cada chunk entra en la ventana
+    results.append(response)
+final = llm_merge(results)  # Unifica los analisis parciales
+```
+
+### Estrategia 3: System Prompt + User Prompt budget
+
+Distribui tus tokens sabiamente segun el peso de cada rol:
+
+```python
+# Modelo mental de presupuesto de tokens
+# Si tu ventana es de 8000 tokens:
+# - System Prompt: 500 tokens (reglas, personalidad, formato)
+# - Historial reciente: 3000 tokens (ultimos mensajes)
+# - User Prompt actual: 2000 tokens (tu consulta + datos)
+# - Output reservado: 2000 tokens (lo que esperas que responda)
+# - Margen de seguridad: 500 tokens (porque siempre hay overhead)
+
+# Ejemplo en codigo:
+SYSTEM_PROMPT_TOKENS = 500
+HISTORY_TOKENS = 3000
+USER_INPUT_TOKENS = 2000
+OUTPUT_RESERVE = 2000
+SAFETY_MARGIN = 500
+
+MAX_CONTEXT = 8000
+assert SYSTEM_PROMPT_TOKENS + HISTORY_TOKENS + USER_INPUT_TOKENS + OUTPUT_RESERVE + SAFETY_MARGIN <= MAX_CONTEXT, \
+    "Token budget excedido. Ajusta los valores."
+```
+
+### Anti-Patron #3: Tirarle todo el PDF de una sin chunking
+
+```python
+# MAL: El PDF tiene 60000 tokens, tu ventana es 8000
+# La IA solo "lee" el principio y el final. El medio se pierde.
+response = llm.chat("Resumi este PDF: " + pdf_completo)  # ❌
+
+# BIEN: Chunking + analisis por partes + merge
+chunks = sliding_window_chunk(pdf_completo)
+resumenes = [llm.chat(f"Resumi esta seccion: {chunk}") for chunk in chunks]
+resumen_final = llm.chat("Unifica estos resumenes parciales:\n" + "\n---\n".join(resumenes))
+```
+
+---
+
+## 12. Queres profundizar?
 
 Este archivo es un resumen. El [repositorio completo](https://github.com/jorgesislema/apuntes_de_ingenieria_de_prompt) tiene 16 modulos:
 
