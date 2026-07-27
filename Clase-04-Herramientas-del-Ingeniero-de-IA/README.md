@@ -37,9 +37,11 @@ Al terminar esta clase vas a poder:
 | Guia | [github.md](github.md) | Git CLI (7 comandos) + GitHub Desktop (instalacion y flujo) |
 | Guia | [markdown.md](markdown.md) | Sintaxis Markdown completa + Smarkdown para prompts |
 | Guia | [opencode.md](opencode.md) | Instalacion de Node.js + Opencode, primeros pasos |
+| Avanzado | [avanzado.md](avanzado.md) | API calls, token budget, testing, chunking, structured output |
 | Practica | [practica.md](practica.md) | Plantillas con 6 ejemplos + paso a paso: crear tu repo con IA |
 | Glosario | [glosario.md](glosario.md) | Terminos nuevos con analogias |
 | Recursos | [recursos.md](recursos.md) | Links, videos, documentacion oficial |
+| Portfolio | [recursos-portfolio.md](recursos-portfolio.md) | Badges, Actions, stats, emojis, iconos, plantilla completa |
 
 ---
 
@@ -77,4 +79,4 @@ Cada ejemplo tiene su propia carpeta con dos archivos:
 
 **Clase 5 — Tipos de Bases de Datos: Relacionales vs. NoSQL en Ecosistemas IA**
 
-Vas a descubrir donde se guarda toda la informacion que usa la IA, y por que hay dos grandes familias de bases de datos que no son enemigas: son companieras de equipo.
+Vas a descubrir donde se guarda toda la informacion que usa la IA, y por que hay dos grandes familias de bases de datos que no son enemigas: son compañeras de equipo.
