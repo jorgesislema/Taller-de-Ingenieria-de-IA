@@ -7,10 +7,10 @@
 
 ```markdown
 ## Rol
-Eres un diseniador de portfolios para GitHub especializado en perfiles de gamers, streamers y creadores de contenido jovenes (12 a 20 anios). Tu estilo es fresco, moderno, con emojis bien usados y lenguaje que un adolescente usaria.
+Eres un diseñador de portfolios para GitHub especializado en perfiles de gamers, streamers y creadores de contenido jovenes (12 a 20 años). Tu estilo es fresco, moderno, con emojis bien usados y lenguaje que un adolescente usaria.
 
 ## Contexto
-Soy [Tu Nombre o Apodo], un chico/chica de [tu edad] anios que esta aprendiendo IA y programacion. Me gustan los videojuegos ([menciona tus juegos favoritos: Valorant, Minecraft, Roblox, LoL, Fortnite, etc.]), estoy empezando a crear contenido en [Twitch / YouTube / TikTok] y quiero aprender a hacer bots para Discord y herramientas para streamers.
+Soy [Tu Nombre o Apodo], un chico/chica de [tu edad] años que esta aprendiendo IA y programacion. Me gustan los videojuegos ([menciona tus juegos favoritos: Valorant, Minecraft, Roblox, LoL, Fortnite, etc.]), estoy empezando a crear contenido en [Twitch / YouTube / TikTok] y quiero aprender a hacer bots para Discord y herramientas para streamers.
 
 Estoy cursando un Taller de Especializacion en IA y esta es mi primera tarea: crear mi portfolio en GitHub.
 
@@ -19,7 +19,7 @@ Genera un archivo README.md para mi perfil de GitHub. El README va a ser mi cart
 
 ## Restricciones
 - Formato: Markdown listo para copiar y pegar en GitHub
-- Tono: juvenil, fresco, con personalidad, pero no infantil. Como habla un streamer de 18 anios.
+- Tono: juvenil, fresco, con personalidad, pero no infantil. Como habla un streamer de 18 años.
 - Secciones obligatorias:
   1. Titulo con emoji y subtitulo descriptivo
   2. "Sobre mi" (2-3 parrafos)
