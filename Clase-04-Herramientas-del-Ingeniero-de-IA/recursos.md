@@ -4,9 +4,21 @@
 
 ---
 
+## Recursos para tu Portfolio
+
+- [Recopilatorio de Portfolio](recursos-portfolio.md) — **Nuevo.** Badges, GitHub Actions (snake, stats, wakatime), emojis tematicos, iconos, generadores de headers, plantilla completa lista para copiar y pegar.
+
+---
+
+## Prompt Engineering avanzado (produccion)
+
+- [Guia Avanzada del taller](avanzado.md) — API calls, token budget, testing automatizado, chunking, structured output. Con codigo Python ejecutable.
+
+---
+
 ## Prompt Engineering (repositorio completo)
 
-- [Apuntes de Ingenieria de Prompt](https://github.com/jorgesislema/apuntes_de_ingenieria_de_prompt) — La guia mas completa en espaniol. 16 modulos, desde conceptos basicos hasta agentes y function calling.
+- [Apuntes de Ingenieria de Prompt](https://github.com/jorgesislema/apuntes_de_ingenieria_de_prompt) — La guia mas completa en español. 16 modulos, desde conceptos basicos hasta agentes y function calling.
 - [Guia de Prompting del taller](../guia-de-prompting.md) — Referencia rapida que ya tenes en este mismo repo.
 - [Prompt Engineering Guide](https://www.promptingguide.ai/) — La biblia en ingles, mantenida por DAIR.AI.
 
@@ -39,10 +51,10 @@
 
 ## Git y GitHub Desktop
 
-- [Pro Git Book (gratis, en espaniol)](https://git-scm.com/book/es/v2) — El libro oficial de Git, completo y en castellano.
+- [Pro Git Book (gratis, en español)](https://git-scm.com/book/es/v2) — El libro oficial de Git, completo y en castellano.
 - [GitHub Desktop (descarga)](https://desktop.github.com/)
 - [Documentacion de GitHub Desktop](https://docs.github.com/es/desktop)
-- [Git Cheat Sheet (PDF oficial en espaniol)](https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf)
+- [Git Cheat Sheet (PDF oficial en español)](https://training.github.com/downloads/es_ES/github-git-cheat-sheet.pdf)
 - [Oh Shit, Git!?!](https://ohshitgit.com/) — Soluciones a los errores mas comunes con Git, explicados sin jerga (en ingles, pero sencillo).
 
 ---
