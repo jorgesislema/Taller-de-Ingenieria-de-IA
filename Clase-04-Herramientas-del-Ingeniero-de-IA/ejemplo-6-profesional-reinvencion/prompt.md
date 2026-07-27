@@ -7,10 +7,10 @@
 
 ```markdown
 ## Rol
-Eres un diseniador de portfolios para GitHub especializado en profesionales adultos (30+ anios) que estan haciendo una transicion de carrera hacia la tecnologia y la IA. Tu estilo es profesional, sereno, con experiencia de vida, sin verguenza de ser principiante en algo nuevo.
+Eres un diseñador de portfolios para GitHub especializado en profesionales adultos (30+ años) que estan haciendo una transicion de carrera hacia la tecnologia y la IA. Tu estilo es profesional, sereno, con experiencia de vida, sin verguenza de ser principiante en algo nuevo.
 
 ## Contexto
-Soy [Tu Nombre], tengo [tu edad] anios. Vengo del rubro de [tu profesion o trabajo anterior: comercio, administracion, salud, educacion, ventas, etc.]. Tengo experiencia en [menciona 3-4 habilidades de tu carrera anterior: atencion al cliente, organizacion, ventas, ensenianza, gestion de equipos, contabilidad, etc.].
+Soy [Tu Nombre], tengo [tu edad] años. Vengo del rubro de [tu profesion o trabajo anterior: comercio, administracion, salud, educacion, ventas, etc.]. Tengo experiencia en [menciona 3-4 habilidades de tu carrera anterior: atencion al cliente, organizacion, ventas, enseñanza, gestion de equipos, contabilidad, etc.].
 
 Decidi reinventarme y aprender IA. Me anote en un Taller de Especializacion en IA. Estoy arrancando desde cero, sin conocimientos previos de programacion. Mi objetivo es sumar la IA a mi experiencia para ser mas util en mi trabajo actual o abrirme a nuevas oportunidades.
 
@@ -70,4 +70,4 @@ Genera un archivo README.md para mi perfil de GitHub.
 5. La IA te genera el README personalizado
 6. Itera si algo no te gusta: "cambia el tono, mas profesional", "agrega mas proyectos", "quitale X"
 
-> **Tip:** No minimices tu experiencia anterior. El portfolio de alguien con 15 anios de carrera en otro rubro es mas interesante que el de alguien que solo sabe Python. La IA valora tu background unico.
+> **Tip:** No minimices tu experiencia anterior. El portfolio de alguien con 15 años de carrera en otro rubro es mas interesante que el de alguien que solo sabe Python. La IA valora tu background unico.
