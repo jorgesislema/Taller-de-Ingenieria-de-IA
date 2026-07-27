@@ -129,7 +129,7 @@ Podes cambiar `python` por `bash`, `javascript`, `html`, `json`, etc.
 
 1. Abri cualquier archivo `.md`
 2. `Ctrl+Shift+V` → se abre la vista previa al lado
-3. `Ctrl+K V` → se abre la vista previa en otra pestania (recomendado: escribis de un lado, ves el resultado del otro)
+3. `Ctrl+K V` → se abre la vista previa en otra pestaña (recomendado: escribis de un lado, ves el resultado del otro)
 
 ---
 
@@ -183,7 +183,7 @@ Cuando escribis un prompt asi:
 
 ```
 Hola necesito que me ayudes con un portfolio. Soy estudiante de
-IA, tengo 25 anios, hice un curso de Python, me gusta la
+IA, tengo 25 años, hice un curso de Python, me gusta la
 tecnologia. Quiero algo profesional. Ponele colores lindos y que
 tenga secciones. Gracias.
 ```
@@ -192,7 +192,7 @@ La IA responde bien. Pero cuando lo escribis asi:
 
 ```markdown
 ## Rol
-Eres un diseniador de portfolios con 10 anios de experiencia.
+Eres un diseñador de portfolios con 10 años de experiencia.
 
 ## Contexto
 Soy estudiante del taller de IA, principiante en programacion.
