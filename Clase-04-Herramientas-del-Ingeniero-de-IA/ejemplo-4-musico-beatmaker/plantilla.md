@@ -13,7 +13,7 @@
 
 ## 🎹 Quien soy
 
-Hago beats desde los [tu edad cuando empezaste] anios. Empece con el celu, despues me pase a la compu, y ahora estoy descubriendo que la inteligencia artificial puede samplear, generar melodias y hasta masterizar pistas. Pero ojo: la IA es una herramienta mas en el estudio, no el productor.
+Hago beats desde los [tu edad cuando empezaste] años. Empece con el celu, despues me pase a la compu, y ahora estoy descubriendo que la inteligencia artificial puede samplear, generar melodias y hasta masterizar pistas. Pero ojo: la IA es una herramienta mas en el estudio, no el productor.
 
 Estoy en el Taller de IA para entender como funciona esta tecnologia por dentro. Porque no es lo mismo usar un preset que saber crearlo.
 
