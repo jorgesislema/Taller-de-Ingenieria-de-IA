@@ -1,0 +1,34 @@
+ACUERDO DE LICENCIA DE SOFTWARE PROPIETARIO
+
+Copyright (c) 2026 Tu Empresa S.A. Todos los derechos reservados.
+
+PROPIEDAD CONFIDENCIAL Y SECRETA
+
+Este software y toda la documentacion asociada (en adelante, el "Software")
+son propiedad exclusiva de Tu Empresa S.A. y estan protegidos por leyes
+de derechos de autor y tratados internacionales de propiedad intelectual.
+
+CONDICIONES DE USO:
+
+1. USO: Se le concede al usuario una licencia limitada, no exclusiva,
+   no transferible, revocable, para usar el Software unicamente para
+   uso interno de la empresa.
+
+2. PROHIBICIONES:
+   a) Copiar, modificar, distribuir, vender, alquilar o prestar el Software
+   b) Realizar Ingenieria Inversa, descompilar o desensamblar el Software
+   c) Remover o alterar cualquier etiqueta de propiedad
+   d) sublicenciar o transferir derechos a terceros
+   e) Usar el Software para desarrollar un producto similar o competidor
+
+3. PROPIEDAD INTELECTUAL: El Software es y seguira siendo propiedad
+   exclusiva de Tu Empresa S.A. Esta licencia no le otorga ningun
+   derecho de propiedad sobre el Software.
+
+4. TERMINACION: Esta licencia se termina automaticamente si usted
+   viola cualquiera de sus terminos.
+
+SIN GARANTIA: EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTIA
+DE NINGUN TIPO, EXPRESA O IMPLICITA.
+
+Al usar este Software, usted acepta estos terminos.

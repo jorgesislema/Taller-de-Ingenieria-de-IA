@@ -1,0 +1,27 @@
+                   GNU LESSER GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+  This version of the GNU Lesser General Public License incorporates
+the terms and conditions of version 3 of the GNU General Public License.
+
+  SUMMARY:
+
+  The LGPL is a free software license, less restrictive than the GPL.
+
+  You may copy, distribute and modify the software as long as you follow
+the terms of the GNU LGPL v3:
+
+  1. You MAY use the LGPL library in proprietary software.
+  2. You MUST license your modifications to the library under the LGPL.
+  3. You MUST make the source code of the library available.
+  4. You may link to the library without "infecting" your proprietary code.
+
+  The key difference from GPL: If you only USE the library (call its functions
+without modifying the library itself), you do NOT need to open your own code.
+
+  This license allows software companies to use LGPL libraries as components
+in their proprietary products, as long as they don't modify the library itself.

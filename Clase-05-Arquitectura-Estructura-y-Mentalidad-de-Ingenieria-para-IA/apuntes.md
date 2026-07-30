@@ -724,6 +724,405 @@ dentro de la carpeta audits/.
 
 ---
 
+## Fase 8: Las Licencias de Software — El "Contrato de Vecindad" de tu Proyecto
+
+### ¿Qué es una licencia y por qué debería importarme?
+
+**La Analogía:** Imagina que construyes una casa. Si no pones un letrero en la puerta que diga "Propiedad Privada" o "Entrada Permitida", cualquier persona puede entrar, usar tu cocina, dormir en tu cama y llevarse tus muebles. Una **licencia de software** es ese letrero. Le dice al mundo: "Esto es mío, y estas son las reglas si quieres usarlo".
+
+**En palabras simples:** Una licencia es un contrato legal (escrito en lenguaje simple) que el creador de un programa pone para decirle a la gente qué puede, qué no puede, y qué debe hacer si usa su código.
+
+**¿Por qué importa en IA?** Porque cuando usas una librería de Python, un modelo de IA pre-entrenado, o cualquier herramienta de código abierto, **estás aceptando una licencia**. Si no la lees, podrías estar rompiendo la ley sin saberlo. Un ingeniero de IA debe saber reconocer y respetar las licencias.
+
+---
+
+### Las 3 Grandes Categorías de Licencias
+
+Piensa en las licencias como un semáforo de tres colores:
+
+```
+🟢 VERDE (Permisivas)     → Puedes hacer casi lo que quieras.
+🟡 AMARILLO (Copyleft)    → Puedes usar, PERO si modificas, debes compartir.
+🔴 ROJO (Propietarias)    → Solo el dueño puede usar, modificar o vender.
+```
+
+---
+
+### 🟢 CATEGORÍA 1: Licencias Permisivas (El "Haz lo que quieras")
+
+Estas licencias son como decir: "Toma mi código, úsalo, mételo en tu proyecto comercial, no me tienes que dar nada a cambio. Solo acuérdate de que yo lo hice".
+
+#### A. MIT — La licencia más popular del mundo
+
+**Analogía:** Es como darle una receta de cocina a alguien. Puede vender el plato, cambiar los ingredientes, ponerle su nombre al restaurante, y no te debe ni un centavo. Solo tiene que poner una小 nota en algún lado diciendo "La receta original fue de fulano".
+
+**Cómo la reconoces:** El archivo `LICENSE` o `LICENSE.txt` empieza así:
+
+```
+MIT License
+
+Copyright (c) [año] [nombre del autor]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software")...
+```
+
+**Qué puedes hacer:**
+- Usar el código en proyectos personales o comerciales
+- Modificarlo libremente
+- Distribuirlo
+- Vender productos que lo incluyan
+
+**Qué DEBES hacer:**
+- Incluir el aviso de copyright (el "acuérdate de quién lo hizo")
+- Incluir la licencia MIT completa en tu copia
+
+**Cuándo elegirla:** Cuando quieres que tu proyecto sea lo más abierto posible y no te importa que otros se lucran de él. Es la licencia de Python, React, TensorFlow, y miles de herramientas de IA.
+
+**Ejemplo real:** Si descargas una librería de Python con licencia MIT, puedes meterla en tu app de IA y venderla sin pagarle nada al creador original.
+
+---
+
+#### B. Apache 2.0 — La MIT "con seguro incluido"
+
+**Analogía:** Es como la MIT pero con una cláusula extra: "Si mi código le causa un problema a alguien y te demandan, yo no me hago responsable. Tú te haces cargo". Además, si modificas el código, **debes avisar** qué cambiaste.
+
+**Cómo la reconoces:**
+
+```
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
+Licensed under the Apache License, Version 2.0...
+```
+
+**Qué puedes hacer:**
+- Todo lo que en MIT (usar, modificar, vender, distribuir)
+
+**Qué DEBES hacer:**
+- Incluir el aviso de copyright
+- Indicar si hiciste cambios en el código
+- Incluir la licencia Apache completa
+
+**Diferencia clave con MIT:** Apache 2.0 tiene una **cláusula de patentes** que protege al usuario. Si el creador original tiene una patente sobre el código, no te puede demandar por usarlo. MIT no tiene esta protección.
+
+**Cuándo elegirla:** Cuando tu proyecto usa patentes o cuando quieres protección extra para los usuarios. Google la usa mucho (TensorFlow, Android).
+
+---
+
+#### C. BSD 2-Clause — La MIT "abuela"
+
+**Analogía:** La licencia más simple que existe. Es como decir: "Haz lo que quieras, pero no digas que yo te lo recomendé si sale mal".
+
+**Cómo la reconoces:**
+
+```
+BSD 2-Clause License
+
+Copyright (c) [año], [nombre del autor]
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met...
+```
+
+**Las 2 condiciones (las únicas):**
+1. Debes mantener el aviso de copyright
+2. No puedes usar el nombre del creador para promocionar tu producto sin permiso
+
+**Cuándo elegirla:** Para proyectos muy simples donde no necesitas la protección de patentes de Apache. Muchos proyectos científicos y académicos la usan.
+
+---
+
+#### D. BSD 3-Clause — La BSD 2-Clause "con una regla más"
+
+**Analogía:** Igual que BSD 2-Clause, pero con una regla extra: "Y tampoco puedes poner mi nombre en los créditos de tu producto como si yo hubiera participado".
+
+**Cómo la reconoces:** Similar a BSD 2-Clause pero con esta línea adicional:
+
+```
+Neither the name of the copyright holder nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.
+```
+
+**Cuándo elegirla:** Cuando no quieres que nadie use tu nombre (o el de tu empresa) para darle "credibilidad" a su producto sin tu permiso.
+
+---
+
+### 🟡 CATEGORÍA 2: Licencias Copyleft (El "Compártilo o Else")
+
+Estas licencias son como decir: "Puedes usar mi código, PERO si lo modificas y lo distribuyes, tu versión modificada DEBE ser también de código abierto con la misma licencia".
+
+#### E. GPL v3 (GNU General Public License) — La licencia "viral"
+
+**Analogía:** Es como darle una receta de cocina con una regla mágica: "Si cambias un ingrediente, **toda** la receta nueva que creaste DEBE ser compartida gratis con el mundo. No puedes hacer una versión secreta".
+
+**Cómo la reconoces:**
+
+```
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+Copyright (C) 2007 Free Software Foundation, Inc.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation...
+```
+
+**Qué puedes hacer:**
+- Usar el código libremente
+- Modificarlo
+- Distribuirlo
+
+**Qué DEBES hacer:**
+- Si distribuyes tu producto (lo vendes o lo das), **TODO** el código fuente que use GPL también debe ser abierto
+- Tus modificaciones deben llevar la misma licencia GPL
+- Debes incluir el código fuente completo
+
+**⚠️ La trampa del "viral":** Si tu proyecto usa una librería GPL y tú lo distribuyes, **todo tu proyecto se vuelve GPL**. No puedes tener partes propietarias. Es como un virus: se contagia a todo lo que toca.
+
+**Cuándo elegirla:** Cuando quieres garantizar que tu código y el de todos los que lo usen sea siempre libre. Linux usa GPL. Si haces una herramienta de IA para uso interno de tu empresa (no la vendes), GPL no te afecta. Solo aplica cuando distribuyes.
+
+---
+
+#### F. LGPL v3 — La GPL "suave"
+
+**Analogía:** Es como la GPL pero con una excepción: "Si tu programa solo **llama** a mi librería pero no la modifica, no tienes que abrir todo tu código. Solo si abres la librería misma".
+
+**Cómo la reconoces:**
+
+```
+GNU LESSER GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+This library is free software...
+```
+
+**Diferencia con GPL:** LGPL permite que software propietario use la librería sin contagiarse. Solo aplica si modificas la librería en sí.
+
+**Cuándo elegirla:** Cuando quieres que tu librería sea abierta pero permitas que otros la usen en software cerrado.
+
+---
+
+#### G. MPL 2.0 (Mozilla Public License) — La "pared de ladrillos"
+
+**Analogía:** Es como tener un apartamento en un edificio. Tú puedes pintar tu pared de color rosa si quieres, pero **no puedes cambiar las paredes del edificio** (el código que compartes con otros). Cada archivo tiene su propia "región".
+
+**Cómo la reconoces:**
+
+```
+Mozilla Public License Version 2.0
+==================================
+
+1. Definitions.
+1.1. "Contributor"
+...
+```
+
+**Qué significa en la práctica:** Si modificas un archivo con MPL, ese archivo debe ser abierto. Pero el resto de tu proyecto puede ser propietario.
+
+**Cuándo elegirla:** Cuando quieres copyleft pero sin ser tan "viral" como GPL. Firefox usa MPL.
+
+---
+
+### 🔴 CATEGORÍA 3: Licencias Propietarias (El "No Tocar")
+
+#### H. Licencias Propietarias / Comerciales
+
+**Analogía:** Es como un restaurante con receta secreta. No puedes ver la receta, no puedes copiarla, y si intentas, te demandan. Solo puedes comer ahí (usar el software) si pagas.
+
+**Cómo las reconoces:** No tienen el texto de una licencia estándar. En su lugar, ves algo como:
+
+```
+PROPRIETARY AND CONFIDENTIAL
+
+Copyright (c) [Empresa]. All rights reserved.
+
+This software is proprietary and confidential. Unauthorized copying,
+modification, distribution, or use of this software is strictly prohibited.
+```
+
+O simplemente un "Acuerdo de Licencia de Usuario Final" (EULA) largo y complicado.
+
+**Qué puedes hacer:**
+- Usar el software según lo que pagaste
+- Nada más
+
+**Qué NO puedes hacer:**
+- Ver el código fuente
+- Modificarlo
+- Compartirlo
+- Vender copias
+
+**Ejemplos:** ChatGPT Plus, Claude Pro, herramientas de Adobe, Microsoft Office.
+
+**Cuándo las ves en IA:** Cuando usas una API como la de OpenAI, estás aceptando sus condiciones de uso (que son propietarias). Puedes usar el resultado, pero no el modelo en sí.
+
+---
+
+### 🔵 CATEGORÍA 4: Creative Commons (Para Contenido, No Código)
+
+**Analogía:** Creative Commons no es para software, sino para **contenido**: fotos, textos, videos, datasets. Si estás entrenando una IA con imágenes o textos, necesitas saber de esto.
+
+#### I. CC BY — La más permisiva
+
+"Puedes usar mi foto para lo que quieras, solo pon mi nombre".
+
+#### J. CC BY-SA — "Pon mi nombre y si la modificas, compártela igual"
+
+Igual que CC BY, pero tu versión modificada debe llevar la misma licencia.
+
+#### K. CC BY-NC — "Pon mi nombre, pero NO la uses para ganar dinero"
+
+No puedes usar el contenido en productos comerciales.
+
+#### L. CC BY-ND — "Pon mi nombre, pero NO la modifiques"
+
+Puedes compartirla, pero no puedes hacer remixes.
+
+#### M. CC0 — "No necesitas mi permiso"
+
+Es como si no hubiera licencia. El contenido es de dominio público.
+
+**¿Por qué importa esto en IA?** Si entrenas una IA con imágenes con licencia CC BY-NC (no comercial), y luego vendes un producto con esas imágenes, estás violando la licencia. **Los datos tienen licencia, y los ingenieros de IA deben respetarlas.**
+
+---
+
+### Tabla Resumen: ¿Cuál Elijo?
+
+| Situación | Licencia Recomendada | ¿Por qué? |
+|-----------|---------------------|------------|
+| Quiero que todos usen mi código sin problemas | **MIT** | La más simple y permisiva |
+| Mi proyecto usa patentes | **Apache 2.0** | Protección de patentes incluida |
+| Quiero que todos compartan sus mejoras | **GPL v3** | "Viral": obliga a abrir código modificado |
+| Quiero copyleft pero sin ser tan estricto | **LGPL v3** o **MPL 2.0** | Copyleft parcial |
+| No quiero que nadie vea mi código | **Propietaria** | Control total |
+| Tengo fotos, textos o datasets | **Creative Commons** | Licencias para contenido |
+| Quiero dedicarlo al dominio público | **CC0** | Sin restricciones |
+
+---
+
+### Cómo Reconocer una Licencia (El Truco del Ingeniero)
+
+No necesitas leer 50 páginas de texto legal. Hay 3 pasos rápidos:
+
+**Paso 1: Busca el archivo `LICENSE` o `LICENSE.txt`**
+En la carpeta raíz de cualquier proyecto de código abierto, siempre hay un archivo con ese nombre. Si no lo ves, busca `COPYING`.
+
+**Paso 2: Lee las primeras 3 líneas**
+- Si ves "MIT License" → Es MIT
+- Si ves "Apache License" → Es Apache
+- Si ves "GNU GENERAL PUBLIC" → Es GPL
+- Si ves "BSD" → Es BSD
+- Si ves "Mozilla Public" → Es MPL
+
+**Paso 3: Busca la palabra clave**
+- "permitted" o "free of charge" → Permisiva (verde)
+- "must distribute under the same license" → Copyleft (amarillo)
+- "proprietary" o "confidential" → Propietaria (rojo)
+
+---
+
+### El Ingeniero de IA y las Licencias
+
+**¿Por qué un ingeniero de IA necesita saber esto?**
+
+1. **Al usar librerías:** Si tu proyecto usa una librería GPL y la vas a vender, necesitas abrir todo tu código. Apache o MIT no te obligan a eso.
+
+2. **Al entrenar modelos:** Si entrenas un modelo con datos con licencia CC BY-NC, no puedes vender el modelo entrenado con esos datos.
+
+3. **Al compartir código:** Si creas una herramienta de IA y la compartes, la licencia que elijas determina si otros pueden usarla, modificarla o venderla.
+
+4. **Al recibir código:** Si la IA te genera código basado en una librería GPL, tú estás recibiendo código con esas restricciones. Debes saberlo.
+
+**Regla de oro del ingeniero:** "Si no sé qué licencia tiene, **no la uso** hasta averiguarlo."
+
+---
+
+### Ejemplo Práctico: Decisión de Licencia para un Proyecto de IA
+
+Imagina que estás construyendo un chatbot para una clínica veterinaria:
+
+```
+Opción 1: MIT
+→ La clínica puede usarlo, modificarlo, y venderlo si quiere.
+→ Cualquier otra clínica puede copiarlo.
+→ Ventaja: Simple. Desventaja: Sin protección.
+
+Opción 2: GPL v3
+→ Si la clínica lo distribuye, debe abrir todo el código.
+→ Ventaja: Contribución a la comunidad. Desventaja: La clínica pierde control.
+
+Opción 3: Propietaria
+→ Solo la clínica puede usarlo. Nadie puede copiarlo.
+→ Ventaja: Control total. Desventaja: No puede compartir mejoras con otras clínicas.
+```
+
+**¿Cuál es la correcta?** Depende del contexto del negocio. **Ahí es donde entra el criterio del ingeniero.**
+
+---
+
+### La Estructura de Carpetas con Licencias
+
+Cuando creas un proyecto, agrega la licencia en la raíz:
+
+```
+mi_proyecto_de_ia/
+│
+├── data/
+├── src/
+├── models/
+├── docs/
+├── tests/
+│
+├── LICENSE              # ← AQUÍ VA TU LICENCIA
+├── README.md            # (Opcional: mencionar la licencia aquí también)
+├── .gitignore
+└── RULES.md
+```
+
+**Consejo:** En el `README.md` de tu proyecto, siempre agrega una sección:
+
+```markdown
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
+```
+
+---
+
+### Errores Comunes (y Cómo Evitarlos)
+
+| Error | Consecuencia | Cómo Evitarlo |
+|-------|-------------|---------------|
+| Usar código GPL sin saberlo en un producto comercial | Te pueden demandar para que abras todo tu código | **Siempre lee la LICENSE antes de usar una librería** |
+| No incluir la licencia cuando redistribuyes | Estás violando la licencia | **Copia el archivo LICENSE a tu proyecto** |
+| Confundir Creative Commons con licencias de software | Entrenar una IA con datos con restricciones | **CC es para contenido, no para código** |
+| Poner "Copyright © Mi Empresa" sin licencia | Nadie puede usar tu código (es propietario por defecto) | **Siempre incluye una licencia explícita** |
+
+---
+
+### Resumen Visual de Licencias
+
+```
+                    PERMISIVIDAD
+    ◄─────────────────────────────────────►
+    MÁS LIBRE                         MENOS LIBRE
+
+    CC0    MIT    Apache    MPL    LGPL    GPL    Propietaria
+     │      │       │       │       │       │        │
+     │      │       │       │       │       │        │
+     ▼      ▼       ▼       ▼       ▼       ▼        ▼
+   Todo   Usar   Usar +   Usar +  Usar +  Usar +  Solo
+   libre  libre  patentes parede  lib     viral   pagar
+                               abierta          y usar
+```
+
+---
+
 ## Cierre de la Clase
 
 ### Reflexión Final

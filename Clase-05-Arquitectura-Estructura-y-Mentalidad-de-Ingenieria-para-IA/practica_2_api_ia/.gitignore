@@ -1,0 +1,45 @@
+# ============================================
+# ARCHIVOS QUE NUNCA DEBEN SUBIRSE A GITHUB
+# ============================================
+
+# Entorno virtual (la "burbuja" de Python)
+.venv/
+venv/
+env/
+ENV/
+
+# Archivos de variables de entorno (CONTRASENAS)
+.env
+.env.local
+.env.production
+.env.*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos temporales
+*.tmp
+*.log
+*.bak
+
+# Modelos de IA pesados
+models/*.bin
+models/*.pt
+models/*.h5
+models/*.onnx
+
+# Archivos de IDE
+.idea/
+*.swp
+*.swo
+
+# Dependencias instaladas
+node_modules/
+*.egg-info/
+dist/
+build/

@@ -1,0 +1,17 @@
+# Librerias necesarias para esta practica
+# Instalar con: pip install -r requirements.txt
+
+# Google Gemini (el script principal)
+google-generativeai>=0.8.0
+
+# OpenAI (GPT)
+openai>=1.0.0
+
+# DeepSeek (compatible con API de OpenAI)
+openai>=1.0.0
+
+# Anthropic (Claude)
+anthropic>=0.25.0
+
+# Para cargar variables de entorno desde .env
+python-dotenv>=1.0.0

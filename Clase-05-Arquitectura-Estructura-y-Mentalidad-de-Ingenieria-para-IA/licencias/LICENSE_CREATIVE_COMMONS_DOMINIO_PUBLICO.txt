@@ -1,0 +1,19 @@
+Creative Commons Zero v1.0 Universal License (CC0 1.0 - Dominio Publico)
+
+Copyright (c) 2026 Tu Nombre o Empresa
+
+El autor de esta obra ha dedicado este archivo al dominio publico,
+renunciando a todos sus derechos sobre la obra bajo la legislacion
+de derechos de autor vigente en todas las jurisdicciones.
+
+  Para mas informacion, visite:
+  https://creativecommons.org/publicdomain/zero/1.0/
+
+SPDX License Identifier: CC0-1.0
+
+---
+
+EN PALABRAS SIMPLES:
+No hay copyright. No hay licencia. No hay restricciones.
+Puedes hacer lo que quieras con este contenido.
+Es como si nunca hubiera tenido dueño.
