@@ -1,0 +1,16 @@
+id,usuario,tweet,fecha,sentimiento
+1,maria_luz,"¡NeoMax eres el mejor! Tus tutoriales me ayudan a mejorar cada día",2024-01-15,positivo
+2,carlos_dev,"Contenido muy útil para aprender programación, lo recomiendo al 100%",2024-01-16,positivo
+3,ana_tech,"No me gustó el último video, muy básico y sin novedad",2024-01-16,negativo
+4,luis_gamer,"¿Cuándo sale el próximo tutorial? Estoy ansioso por verlo",2024-01-17,neutral
+5,sofia_code,"Gracias por explicar tan claro, eres genial NeoMax!",2024-01-17,positivo
+6,pedro_ai,"El video no aporta nada nuevo, estoy decepcionado del contenido",2024-01-18,negativo
+7,laura_ui,"Me encanta tu energía! Siempre aprendo algo nuevo contigo",2024-01-18,positivo
+8,miguel_data,"Buen contenido pero muy largo, podría ser más corto y directo",2024-01-19,neutral
+9,elena_web,"NeoMax tiene el mejor canal de programación en español!",2024-01-19,positivo
+10,jose_mobile,"No entiendo por qué tiene tantos suscriptores, el contenido es regular",2024-01-20,negativo
+11,maria_python,"¡Wow! No esperaba ese tip, me sorprendió muchísimo",2024-01-20,sorprendido
+12,carlos_js,"¿Qué framework usa? Estoy confundido con tanta tecnología",2024-01-21,confundido
+13,ana_ml,"Me da miedo empezar a programar, parece muy difícil todo",2024-01-21,asustado
+14,luis_data,"Excelente tutorial, como siempre NeoMax no decepciona",2024-01-22,positivo
+15,sofia_dev,"El contenido está bien pero los gráficos se ven pequeños",2024-01-22,neutral
