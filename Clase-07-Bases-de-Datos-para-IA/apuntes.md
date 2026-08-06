@@ -1,3 +1,4 @@
+https://drive.google.com/drive/u/1/folders/1ORi48lTXyRGp8lBcvZSqarpk59JvIzaI
 # Clase 7 — El Almacén del Futuro: Bases de Datos para IA
 
 > Material de apoyo para el estudiante. Leelo directo en GitHub o en la vista web. No necesitas instalar nada.
