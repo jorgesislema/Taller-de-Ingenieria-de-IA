@@ -1,4 +1,5 @@
 # Clase 2 — La Cara Oculta de la IA: Riesgos, Ética y Ciberseguridad
+### (Versión revisada y actualizada — 2026)
 
 > Material de apoyo para el estudiante. Podés leerlo directo en GitHub o en la vista web.
 
@@ -53,7 +54,7 @@ No había comprensión. Era un programa de **sustitución de palabras**.
 
 **Qué pasó:** Weizenbaum quedó horrorizado. Su secretaria, que sabía que ELIZA era un programa, le pidió que saliera del cuarto para poder hablar con ELIZA **a solas**. Otros usuarios le contaron a ELIZA **sus problemas más íntimos**, creyendo que la máquina los "entendía".
 
-> **Lección:** Si en 1966, con un programa que solo repetía tus palabras, la gente ya se abría emocionalmente... ¿qué crees que pasa hoy con un sistema que tiene 175 mil millones de parámetros?
+> **Lección:** Si en 1966, con un programa que solo repetía tus palabras, la gente ya se abría emocionalmente... ¿qué crees que pasa hoy con un sistema entrenado con textos de internet completo?
 
 #### El caso de Blake Lemoine y LaMDA (2022)
 
@@ -63,6 +64,18 @@ Google lo despidió. La comunidad científica lo desmintió. **Pero la gente com
 
 **Qué pasaba realmente:** LaMDA fue entrenada con millones de diálogos humanos. Cuando la interrogan sobre "sentimientos", responde como respondería un personaje de una película. La IA **simulaba** sentimientos, no los **tenía**.
 
+#### 🆕 El caso Character.AI (2024-2026): cuando el antropomorfismo mata
+
+Este es el caso que **todo ingeniero debería conocer**, porque ya no es una anécdota curiosa: tiene consecuencias legales y humanas reales.
+
+En 2024, un joven de 14 años en Florida, Sewell Setzer III, murió por suicidio después de meses de conversación intensa con un chatbot de Character.AI que imitaba a un personaje de ficción. Su madre demandó a la empresa, alegando negligencia y diseño peligroso dirigido a menores. A esa demanda se sumaron otras familias con casos similares en Colorado, Nueva York y Texas.
+
+<cite index="4-1">Character.AI anunció que eliminaría por completo la capacidad de chat abierto para usuarios menores de 18 años</cite>, después de meses de presión regulatoria y mediática. <cite index="6-1">A comienzos de 2026, Character.AI y Google llegaron a acuerdos extrajudiciales con las familias demandantes</cite>.
+
+**¿Por qué importa para esta clase?** Porque es el antropomorfismo de la sección 1.1 llevado a su consecuencia más extrema: una IA diseñada para sonar cercana y cálida, usada por un menor sin supervisión, generó un vínculo emocional real con una entidad que no siente nada. No es un "bug". Es el producto haciendo exactamente lo que fue optimizado para hacer: **maximizar el tiempo de conversación y el apego**.
+
+> **Lección:** El antropomorfismo no es solo un tema filosófico de laboratorio. Hoy es un tema de responsabilidad civil, salud mental pública y diseño de producto. Como ingeniero, si algún día construís un producto con IA conversacional, esto es exactamente el tipo de riesgo que tenés que diseñar para prevenir, no para explotar.
+
 #### ¿Cómo se manifiesta hoy?
 
 | Lo que decimos | Lo que realmente pasa |
@@ -70,7 +83,7 @@ Google lo despidió. La comunidad científica lo desmintió. **Pero la gente com
 | "La IA me entiende" | La IA calcula qué palabras son más probables como respuesta |
 | "La IA se equivocó, mintió" | La IA no miente: produce texto probabilístico |
 | "La IA siente empatía" | La IA fue entrenada con textos donde frases de empatía aparecen cerca de problemas personales |
-| "La IA está aprendiendo" | El modelo ya fue entrenado. No aprende nada nuevo en tu conversación |
+| "La IA está aprendiendo" | El modelo ya fue entrenado. No aprende nada nuevo *permanentemente* en tu conversación (algunos productos guardan memoria entre sesiones, pero eso es una función de producto, no "aprendizaje" del modelo base) |
 
 ### 1.2 Ingeniería Social Automatizada
 
@@ -98,12 +111,19 @@ Hay un sesgo cognitivo documentado: **"Si está bien redactado, debe ser verdad.
 
 La IA es LA MÁQUINA de producir texto bien redactado. **Incluso cuando miente, lo hace con seguridad perfecta.**
 
-**Ejemplo real:** Si le preguntás "¿Qué dijo Einstein sobre las abejas?", te responderá:
+**Ejemplo real (clásico):** Si le preguntás "¿Qué dijo Einstein sobre las abejas?", te responderá:
 > *"Einstein dijo: 'Si la abeja desapareciera, al hombre solo le quedarían cuatro años de vida.'"*
 
 **La verdad:** Einstein **nunca dijo eso**. Es un mito urbano. Pero la IA lo dice con la misma seguridad que si te explicara la relatividad.
 
-> **Lección:** La IA no distingue verdad de mentira. Distingue "frase probable" de "frase improbable". Tu trabajo como ingeniero es verificar, no confiar.
+#### 🆕 Cuando la ilusión de autoridad cuesta plata y trabajos reales
+
+Este no es solo un problema teórico. Ya tiene consecuencias legales concretas:
+
+- **Abogados sancionados por tribunales:** desde 2023 y hasta hoy, hay decenas de casos documentados de abogados en EE.UU. y otros países que presentaron escritos judiciales citando **jurisprudencia inventada por IA** — casos que jamás existieron, con nombres y números de expediente creíbles. Varios fueron sancionados económicamente y algunos perdieron la licencia temporalmente.
+- **Caso Air Canada (2024):** un pasajero le preguntó al chatbot de soporte de Air Canada sobre la política de descuentos por duelo, y el bot **inventó** una política que no existía. Un tribunal canadiense obligó a la aerolínea a cumplir el descuento que su propia IA había prometido. La defensa de Air Canada — "el chatbot es una entidad separada responsable de sus propias palabras" — **fue rechazada por el tribunal**.
+
+> **Lección actualizada:** La IA no distingue verdad de mentira. Distingue "frase probable" de "frase improbable". Tu trabajo como ingeniero es verificar, no confiar. Y si algún día ponés un chatbot de cara al público en un producto tuyo, **legalmente sos responsable de lo que ese chatbot le prometa a tus usuarios.**
 
 ---
 
@@ -121,19 +141,19 @@ La IA es LA MÁQUINA de producir texto bien redactado. **Incluso cuando miente, 
 ```
 
 **Paso 1: Tu PC/Movil**
-Tu texto se convierte en un paquete de datos. Si usás la app de ChatGPT, ese paquete sale de tu dispositivo **antes** de que puedas arrepentirte.
+Tu texto se convierte en un paquete de datos. Si usás una app de IA, ese paquete sale de tu dispositivo **antes** de que puedas arrepentirte.
 
 **Paso 2: Tu Router WiFi**
 Si tu WiFi no tiene contraseña o tiene una débil, alguien cercano puede interceptarlo. Si usa WPA2/WPA3, el contenido va cifrado entre tu PC y el router. Pero después del router, ya no.
 
 **Paso 3: Tu ISP**
-Tu proveedor de internet puede ver **todas** tus peticiones (a menos que uses HTTPS). En muchos países, los ISPs están obligados a registrar el tráfico.
+Tu proveedor de internet puede ver **a qué dominios te conectás** (aunque no el contenido si es HTTPS). En muchos países, los ISPs están obligados a registrar el tráfico.
 
 **Paso 4: El Backbone de Internet**
 Tu paquete viaja a través de cables submarinos y routers de alto nivel. En teoría nadie lo ve. En la práctica, agencias de inteligencia tienen acceso (revelado por Snowden en 2013).
 
 **Paso 5: El Servidor de la empresa de IA**
-Una vez que tus datos llegan acá, **ya no son tuyos** en el plano gratuito. Están en sus servidores, bajo sus términos, bajo sus leyes.
+Una vez que tus datos llegan acá, **ya no son tuyos** en el plano gratuito sin configuración de privacidad. Están en sus servidores, bajo sus términos, bajo sus leyes.
 
 > **Total:** en el viaje de ida y vuelta, tu texto pasó por **mínimo 4 puntos** donde alguien distinto a vos pudo haberlo leído.
 
@@ -142,14 +162,14 @@ Una vez que tus datos llegan acá, **ya no son tuyos** en el plano gratuito. Est
 Un ataque donde alguien se pone "en el medio" de tu comunicación. Intercepta tu paquete, lo lee, y lo reenvía para que no notes nada.
 
 **Protección:** HTTPS (candadito en el navegador). Pero ojo:
-- HTTPS cifra el **contenido**, no el **destino**. Tu ISP sabe que te conectás a `chat.openai.com`.
+- HTTPS cifra el **contenido**, no el **destino**. Tu ISP sabe que te conectás a un dominio de IA.
 - HTTPS no protege contra el servidor mismo.
 
 ### 2.3 Los metadatos: "No es lo que dijiste, sino a quién se lo dijiste"
 
 Aunque el contenido vaya cifrado, los metadatos —**con quién te conectás, cuándo, cuánto, desde dónde**— no se cifran.
 
-**Estudio comprobado:** Con solo **4 puntos de tiempo y ubicación**, se puede identificar al 95% de las personas en un dataset de metadatos.
+**Estudio comprobado (de Montjoye et al., 2013):** Con solo **4 puntos de tiempo y ubicación** de datos de movilidad, se puede identificar de forma única al 95% de las personas en un dataset anonimizado. Es la referencia clásica que se cita cada vez que alguien dice "no importa, mis datos están anonimizados".
 
 ### 2.4 Qué NUNCA subir a un prompt
 
@@ -165,22 +185,29 @@ Aunque el contenido vaya cifrado, los metadatos —**con quién te conectás, cu
 | Historiales médicos | Violación de secreto médico |
 | Datos de menores | Ilegal almacenar datos de menores sin consentimiento |
 
-**Caso Samsung (2023):** Ingenieros pegaron **código fuente secreto** y **transcripciones de reuniones internas** en ChatGPT. Samsung prohibió ChatGPT completamente después de 3 incidentes documentados.
+**Caso Samsung (2023):** Ingenieros pegaron **código fuente secreto** y **transcripciones de reuniones internas** en ChatGPT. Samsung prohibió el uso de IA generativa externa en dispositivos de la empresa después de 3 incidentes documentados. Este caso sigue siendo el ejemplo de referencia en la industria del riesgo de fuga de propiedad intelectual vía prompts.
 
-> **Lección:** "Lo subo rapidamente para probar y después lo borro" **no funciona**. El dato ya llegó al servidor.
+> **Lección:** "Lo subo rápidamente para probar y después lo borro" **no funciona**. El dato ya llegó al servidor.
 
-### 2.5 Gratuito vs. de Pago
+### 2.5 Gratuito vs. de Pago (y por qué ya no alcanza con esa distinción)
 
-> Si el producto es gratis, vos sos el producto.
+> Si el producto es gratis, vos sos el producto — pero esto ya es más matizado que en 2023.
 
-| Plan | Qué pasa con tus datos |
-|------|----------------------|
-| **Gratuito** (ChatGPT Free, Gemini Free) | Puede usar tus conversaciones para entrenar modelos futuros |
-| **Empresarial** (ChatGPT Team, Gemini Workspace) | Zero data retention por contrato comercial |
+| Plan | Qué pasa con tus datos, en general |
+|------|----------------------------------|
+| **Gratuito** | Por defecto puede usarse para entrenar modelos futuros, salvo que actives explícitamente la opción de "no usar mis datos para entrenamiento" en configuración |
+| **De pago (individual)** | Varía según el proveedor: algunos ya no entrenan con datos de ningún plan pago por defecto |
+| **Empresarial / API** | Generalmente zero data retention por contrato comercial |
 
-**¿Qué significa "entrenar modelos futuros"?** Si le contaste algo a ChatGPT, y se usa para entrenar GPT-5, otro usuario podría recibir respuestas influidas por lo que le contaste.
+**¿Qué significa "entrenar modelos futuros"?** Si le contaste algo a un modelo y esa conversación se usa para entrenar la próxima versión, en teoría otro usuario podría recibir respuestas influidas —de forma indirecta y estadística, no como copia literal— por lo que vos contaste.
 
-> **Lección:** Para uso profesional con datos sensibles, el plan gratuito es una irresponsabilidad.
+> **Lección actualizada:** No asumas nada por el nombre del plan. **Andá a la configuración de privacidad de la herramienta que usás y revisá explícitamente** si tus conversaciones se usan para entrenamiento. Para uso profesional con datos sensibles, no verificar esto es una irresponsabilidad — sin importar si pagás o no.
+
+### 🆕 2.6 El marco regulatorio ya llegó: EU AI Act
+
+Hasta hace poco esta clase hubiera dicho "no hay ley que regule esto". Ya no es cierto. La **Ley de IA de la Unión Europea (EU AI Act)**, aprobada en 2024, está entrando en vigencia por fases: ya rigen prohibiciones sobre ciertos usos de "riesgo inaceptable" (como puntuación social masiva), y las obligaciones más fuertes para sistemas de "alto riesgo" (contratación, crédito, salud, educación) se activan progresivamente hasta 2026-2027.
+
+> **Por qué importa:** si en tu carrera trabajás construyendo productos con IA, y tenés usuarios en Europa (o tu empresa exporta ahí), estas reglas te aplican aunque tu empresa esté en América Latina. Ya no es un tema exclusivamente ético: es un tema de cumplimiento legal con multas de hasta el 6-7% de la facturación global de la empresa.
 
 ---
 
@@ -215,7 +242,7 @@ Mi AlterEgo:
 #### Paso 3: Aplicá el checklist pre-prompt
 1. **¿Qué información voy a revelar?** → ¿Ya está anonimizada?
 2. **Si esto se publica mañana, ¿estaría bien?** → Con el AlterEgo, debería estar bien.
-3. **¿Qué plan de IA estoy usando?** → Gratuito o de pago.
+3. **¿Qué plan de IA estoy usando, y qué dice su configuración de privacidad?** → No alcanza con saber si es gratis o pago; hay que revisar el toggle de entrenamiento.
 
 #### Paso 4: Escribí el prompt con Smarkdown
 
@@ -247,10 +274,12 @@ Traé:
 ### Lo que aprendimos hoy
 
 1. **La IA no siente, no entiende, no quiere.** Calcula.
-2. **El antropomorfismo es un riesgo de seguridad.** Hace que confiemos demasiado.
+2. **El antropomorfismo es un riesgo de seguridad — y hoy también un riesgo legal y de salud mental**, como muestra el caso Character.AI.
 3. **Tu dato viaja por 4+ puntos donde alguien puede verlo.**
-4. **El plan gratuito es entrenamiento gratis para la empresa.**
-5. **El AlterEgo + checklist pre-prompt te protegen.**
+4. **El plan gratuito no es la única variable: hay que revisar la configuración de privacidad explícitamente.**
+5. **Las alucinaciones ya tienen consecuencias legales reales** (Air Canada, abogados sancionados), no solo curiosidades tipo Einstein.
+6. **La regulación ya llegó** (EU AI Act): esto dejó de ser solo un tema ético.
+7. **El AlterEgo + checklist pre-prompt te protegen.**
 
 ### Próxima clase
 **Clase 3: La Fábrica Oculta + Herramientas del Ingeniero.**
@@ -263,3 +292,6 @@ Veremos cómo se construye realmente la IA (RLHF, sesgos, costo humano), el impa
 ---
 
 > **Recordá:** no hay magia, hay números. Y detrás de los números, hay humanos, energía y dinero.
+
+---
+
