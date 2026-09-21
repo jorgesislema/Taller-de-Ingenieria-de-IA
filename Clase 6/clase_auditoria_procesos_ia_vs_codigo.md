@@ -1,7 +1,7 @@
 # Clase — Auditoría de Procesos: Qué Automatizar, Cómo Preguntarlo, y Cuándo Usar IA (y Cuándo No)
 
 > Material de apoyo para el estudiante. Leelo directo en GitHub o en la vista web.
-> **Ubicación sugerida en el programa:** esta clase encaja mejor **antes** de empezar a programar agentes (antes de la Clase 10 del bloque de Ingeniería de Prompts Avanzada). La razón es simple: no tiene sentido enseñar a construir un agente sofisticado si el alumno todavía no sabe **qué proceso real vale la pena automatizar, y con qué herramienta**. Esta clase es el "descubrimiento de requerimientos" que precede a todo lo técnico que viene después.
+
 
 ---
 
