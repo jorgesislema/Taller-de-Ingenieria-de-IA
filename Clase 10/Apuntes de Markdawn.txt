@@ -1,0 +1,1172 @@
+# Clase práctica: Introducción a Markdown desde cero
+
+## 1. Información general
+
+**Tema:** Introducción a Markdown
+**Duración:** 3 horas
+**Nivel:** Principiante absoluto
+**Modalidad:** Teórico-práctica
+**Requisitos:** No se requiere experiencia en programación
+**Herramientas:** Navegador web, GitHub y un editor de texto
+**Producto final:** Documento creado con Markdown y publicado en un repositorio de GitHub
+
+---
+
+# 2. 🎯 Objetivo de la clase
+
+Al finalizar la clase, el estudiante será capaz de:
+
+* Explicar qué es Markdown.
+* Comprender para qué se utiliza.
+* Crear un archivo `.md`.
+* Crear títulos y subtítulos.
+* Escribir párrafos.
+* Aplicar negrita y cursiva.
+* Crear listas.
+* Crear enlaces.
+* Insertar imágenes.
+* Crear tablas.
+* Crear bloques de código.
+* Utilizar citas.
+* Organizar correctamente un documento.
+* Crear un repositorio básico en GitHub.
+* Subir un documento Markdown.
+* Realizar un cambio y observar cómo GitHub registra la modificación.
+
+La meta no es memorizar símbolos.
+
+La meta es que el estudiante pueda decir:
+
+> "Necesito crear un documento y sé cómo estructurarlo utilizando Markdown."
+
+---
+
+# 3. 🧠 Antes de comenzar
+
+Antes de enseñar Markdown, debemos responder una pregunta:
+
+## ¿Qué problema intenta resolver Markdown?
+
+Cuando escribimos un documento podemos querer indicar:
+
+* esto es un título;
+* esto es un subtítulo;
+* esto es importante;
+* esto es una lista;
+* esto es un enlace;
+* esto es código;
+* esto es una imagen.
+
+Un procesador de textos normalmente permite hacer esto utilizando botones.
+
+Markdown propone otra idea:
+
+> Utilizar texto sencillo y determinados símbolos para indicar la estructura del documento.
+
+Por ejemplo:
+
+```markdown
+# Mi primer documento
+```
+
+se interpreta como:
+
+# Mi primer documento
+
+El estudiante escribe texto.
+
+Markdown proporciona una forma de describir cómo debe organizarse ese texto.
+
+---
+
+# 4. 💡 ¿Qué es Markdown?
+
+Markdown es un lenguaje de marcado ligero utilizado para escribir documentos estructurados utilizando texto plano.
+
+Un archivo Markdown normalmente utiliza la extensión:
+
+```text
+.md
+```
+
+Por ejemplo:
+
+```text
+README.md
+apuntes.md
+documentacion.md
+proyecto.md
+```
+
+Markdown es utilizado ampliamente para:
+
+* documentación;
+* README de proyectos;
+* GitHub;
+* documentación técnica;
+* apuntes;
+* blogs;
+* libros;
+* páginas web;
+* documentación de software;
+* proyectos de programación;
+* inteligencia artificial;
+* ciencia de datos.
+
+---
+
+# 5. 🧠 Modelo mental
+
+Podemos imaginar Markdown como un idioma muy sencillo para decirle a un sistema:
+
+```text
+Esto es un título.
+
+Esto es un párrafo.
+
+Esto es una lista.
+
+Esto es un enlace.
+
+Esto es código.
+```
+
+Por ejemplo:
+
+```markdown
+# Inteligencia Artificial
+
+La inteligencia artificial permite construir sistemas capaces de realizar tareas que normalmente requieren capacidades humanas.
+
+- Aprendizaje
+- Predicción
+- Clasificación
+- Generación
+```
+
+El resultado será un documento estructurado.
+
+---
+
+# 6. 🔰 Nuestro primer Markdown
+
+Comencemos con algo muy sencillo.
+
+Escriba:
+
+```markdown
+# Mi primer documento
+
+Estoy aprendiendo Markdown.
+```
+
+Guarde el archivo como:
+
+```text
+mi-primer-documento.md
+```
+
+Ahora observe la diferencia.
+
+El archivo contiene:
+
+```markdown
+# Mi primer documento
+```
+
+pero cuando Markdown es interpretado, aparece como:
+
+# Mi primer documento
+
+El símbolo `#` no forma parte del título visual.
+
+Es una instrucción que indica:
+
+> "Este texto es un título de nivel 1."
+
+---
+
+# 7. 📝 Títulos
+
+Markdown utiliza `#` para crear títulos.
+
+```markdown
+# Título 1
+
+## Título 2
+
+### Título 3
+
+#### Título 4
+```
+
+Podemos imaginar la estructura como un árbol:
+
+```text
+Documento
+│
+├── # Título principal
+│
+├── ## Sección
+│
+│   ├── ### Subsección
+│   │
+│   └── ### Otra subsección
+│
+└── ## Otra sección
+```
+
+## ⚠️ Regla importante
+
+No debemos elegir los títulos únicamente porque "se ven grandes".
+
+Los niveles representan jerarquía.
+
+Incorrecto:
+
+```markdown
+# Mi documento
+
+#### Introducción
+
+## Instalación
+```
+
+Correcto:
+
+```markdown
+# Mi documento
+
+## Introducción
+
+## Instalación
+```
+
+---
+
+# 8. 📝 Párrafos
+
+Un párrafo se escribe normalmente.
+
+```markdown
+Markdown es una herramienta muy utilizada para crear documentación.
+
+Permite estructurar documentos utilizando texto plano.
+```
+
+La separación entre los dos párrafos se realiza dejando una línea vacía.
+
+---
+
+# 9. ✏️ Negrita
+
+Para colocar texto en negrita utilizamos:
+
+```markdown
+**texto importante**
+```
+
+Resultado:
+
+**texto importante**
+
+Ejemplo:
+
+```markdown
+La inteligencia artificial es una tecnología **transformadora**.
+```
+
+---
+
+# 10. ✏️ Cursiva
+
+Para utilizar cursiva:
+
+```markdown
+*texto*
+```
+
+Resultado:
+
+*texto*
+
+Ejemplo:
+
+```markdown
+Este concepto es *fundamental*.
+```
+
+---
+
+# 11. 🔎 Negrita + cursiva
+
+También podemos combinar ambos:
+
+```markdown
+***texto***
+```
+
+Resultado:
+
+***texto***
+
+No debemos abusar del formato.
+
+El formato debe ayudar a comprender el documento.
+
+---
+
+# 12. 📋 Listas
+
+Las listas son fundamentales para organizar información.
+
+## Lista sin orden
+
+```markdown
+- Python
+- JavaScript
+- Java
+- C++
+```
+
+Resultado:
+
+* Python
+* JavaScript
+* Java
+* C++
+
+También podemos utilizar:
+
+```markdown
+* Python
+* JavaScript
+* Java
+```
+
+---
+
+# 13. 🔢 Listas numeradas
+
+```markdown
+1. Crear el documento
+2. Escribir el contenido
+3. Revisar
+4. Publicar
+```
+
+Resultado:
+
+1. Crear el documento
+2. Escribir el contenido
+3. Revisar
+4. Publicar
+
+Las listas numeradas son especialmente útiles cuando existe un orden.
+
+---
+
+# 14. 🔗 Enlaces
+
+Para crear un enlace:
+
+```markdown
+[GitHub](https://github.com)
+```
+
+La estructura es:
+
+```text
+[texto que verá el usuario](dirección)
+```
+
+Ejemplo:
+
+```markdown
+Puede consultar la documentación en [GitHub](https://github.com).
+```
+
+---
+
+# 15. 🖼️ Imágenes
+
+Una imagen utiliza una estructura similar a un enlace:
+
+```markdown
+![Descripción de la imagen](imagen.png)
+```
+
+La diferencia es el signo `!`.
+
+```text
+Enlace:
+[texto](url)
+
+Imagen:
+![descripción](imagen)
+```
+
+La descripción es importante porque proporciona información alternativa cuando la imagen no puede visualizarse.
+
+---
+
+# 16. 💬 Citas
+
+Podemos crear una cita utilizando:
+
+```markdown
+> La tecnología debe ayudar a resolver problemas.
+```
+
+Resultado:
+
+> La tecnología debe ayudar a resolver problemas.
+
+Las citas pueden utilizarse para destacar:
+
+* definiciones;
+* frases;
+* recomendaciones;
+* advertencias;
+* información importante.
+
+---
+
+# 17. 💻 Código
+
+Markdown permite mostrar código.
+
+Por ejemplo:
+
+```markdown
+`print("Hola mundo")`
+```
+
+Resultado:
+
+`print("Hola mundo")`
+
+Esto se denomina código en línea.
+
+---
+
+# 18. 💻 Bloques de código
+
+Cuando necesitamos mostrar varias líneas:
+
+````markdown
+```python
+nombre = "Jorge"
+print(nombre)
+```
+````
+
+El resultado será un bloque de código.
+
+La palabra `python` indica el lenguaje.
+
+Otros ejemplos:
+
+````markdown
+```javascript
+console.log("Hola");
+```
+````
+
+````markdown
+```bash
+git status
+```
+````
+
+Esto resulta especialmente importante cuando posteriormente aprendamos programación y Git.
+
+---
+
+# 19. 📊 Tablas
+
+Markdown permite crear tablas.
+
+```markdown
+| Lenguaje | Uso |
+|---|---|
+| Python | IA y datos |
+| JavaScript | Web |
+| SQL | Bases de datos |
+```
+
+Resultado:
+
+| Lenguaje   | Uso            |
+| ---------- | -------------- |
+| Python     | IA y datos     |
+| JavaScript | Web            |
+| SQL        | Bases de datos |
+
+Las tablas son útiles para comparar información.
+
+---
+
+# 20. 🧠 No memorice: reconozca patrones
+
+Hasta ahora hemos aprendido varios patrones:
+
+````text
+#       → título
+
+**texto** → negrita
+
+*texto* → cursiva
+
+-       → lista
+
+1.      → lista numerada
+
+[texto](url) → enlace
+
+![texto](imagen) → imagen
+
+>       → cita
+
+`texto` → código
+
+```text
+````
+
+La idea no es memorizar todo inmediatamente.
+
+Con la práctica, estos patrones se vuelven familiares.
+
+---
+
+# 21. 🧪 Primera práctica
+
+Cree un archivo:
+
+```text
+mi-perfil.md
+```
+
+Debe contener:
+
+```markdown
+# Mi perfil
+
+## Sobre mí
+
+Escriba una breve presentación.
+
+## Mis intereses
+
+- Interés 1
+- Interés 2
+- Interés 3
+
+## Mis objetivos
+
+1. Objetivo 1
+2. Objetivo 2
+3. Objetivo 3
+
+## Una página que utilizo
+
+[Visitar página](https://github.com)
+```
+
+### Objetivo
+
+No copiar solamente.
+
+Debe modificar el contenido utilizando información propia.
+
+---
+
+# 22. 🧪 Segunda práctica: documento profesional
+
+Ahora cree:
+
+```text
+mi-proyecto.md
+```
+
+Debe contener:
+
+```markdown
+# Mi proyecto
+
+## Introducción
+
+Explique brevemente el proyecto.
+
+## Objetivo
+
+Explique qué quiere conseguir.
+
+## Herramientas
+
+| Herramienta | Utilidad |
+|---|---|
+| Markdown | Documentación |
+| GitHub | Colaboración |
+| Otra | Explique |
+
+## Pasos
+
+1. Primer paso
+2. Segundo paso
+3. Tercer paso
+
+## Recursos
+
+> Agregue aquí una recomendación importante.
+
+[Documentación](https://github.com)
+```
+
+---
+
+# 23. ⚠️ Errores frecuentes
+
+## Error 1: olvidar el espacio
+
+Incorrecto:
+
+```markdown
+#Título
+```
+
+Correcto:
+
+```markdown
+# Título
+```
+
+---
+
+## Error 2: utilizar demasiados títulos
+
+Incorrecto:
+
+```markdown
+# Hola
+
+# Información
+
+# Objetivos
+
+# Conclusiones
+```
+
+No siempre es incorrecto técnicamente, pero normalmente sería mejor utilizar una jerarquía:
+
+```markdown
+# Mi proyecto
+
+## Información
+
+## Objetivos
+
+## Conclusiones
+```
+
+---
+
+## Error 3: utilizar Markdown como decoración
+
+Markdown no debe utilizarse únicamente para hacer que un texto "se vea bonito".
+
+Su objetivo principal es representar estructura y significado.
+
+---
+
+# 24. 🔎 Markdown no es un procesador de textos
+
+Esta diferencia es importante.
+
+Un procesador de textos normalmente trabaja con una representación visual:
+
+```text
+selecciono texto
+      ↓
+presiono "negrita"
+      ↓
+texto aparece en negrita
+```
+
+Markdown trabaja mediante texto estructurado:
+
+```text
+**texto**
+```
+
+El sistema posteriormente interpreta esa estructura.
+
+---
+
+# 25. 🧠 ¿Por qué Markdown es importante para GitHub?
+
+GitHub utiliza Markdown ampliamente para documentación.
+
+Un archivo:
+
+```text
+README.md
+```
+
+puede convertirse en la presentación principal de un proyecto.
+
+Por ejemplo:
+
+```text
+Repositorio
+│
+├── README.md
+├── proyecto.md
+├── instalacion.md
+└── documentacion.md
+```
+
+Cuando el repositorio se abre en GitHub, los archivos Markdown pueden mostrarse como documentos formateados.
+
+---
+
+# 26. 🚀 Nuestro primer proyecto colaborativo
+
+Ahora comienza la parte más importante de la clase.
+
+El profesor creará un repositorio:
+
+```text
+proyecto-markdown-grupo
+```
+
+Todos los estudiantes tendrán acceso.
+
+El grupo creará un documento colectivo.
+
+Por ejemplo:
+
+```text
+# Guía de Inteligencia Artificial
+
+## Introducción
+
+## ¿Qué es la IA?
+
+## Machine Learning
+
+## Aplicaciones
+
+## Riesgos
+
+## Glosario
+
+## Conclusiones
+```
+
+Cada estudiante será responsable de una sección.
+
+---
+
+# 27. 👥 División del trabajo
+
+Ejemplo:
+
+| Estudiante | Responsabilidad  |
+| ---------- | ---------------- |
+| 1          | Introducción     |
+| 2          | ¿Qué es IA?      |
+| 3          | Machine Learning |
+| 4          | Aplicaciones     |
+| 5          | Riesgos          |
+| 6          | Glosario         |
+| 7          | Conclusiones     |
+
+El número de estudiantes determinará la cantidad de secciones.
+
+---
+
+# 28. 🔄 Flujo de trabajo
+
+Cada estudiante seguirá:
+
+```text
+Asignación
+    ↓
+Crear/modificar contenido
+    ↓
+Guardar
+    ↓
+Commit
+    ↓
+Pull Request
+    ↓
+Revisión
+    ↓
+Corrección
+    ↓
+Aprobación
+    ↓
+Merge
+    ↓
+Documento final
+```
+
+Aquí aparece por primera vez el concepto de colaboración mediante control de versiones.
+
+---
+
+# 29. 🧠 ¿Qué es un commit?
+
+Un commit es un registro de cambios.
+
+Podemos imaginarlo como una fotografía del estado del proyecto en determinado momento.
+
+Ejemplo:
+
+```text
+Commit 1
+"Agrega introducción"
+
+        ↓
+
+Commit 2
+"Agrega sección de IA"
+
+        ↓
+
+Commit 3
+"Corrige tabla"
+```
+
+Esto permite conocer la evolución del proyecto.
+
+---
+
+# 30. 🧠 ¿Qué es un Pull Request?
+
+Un Pull Request es una solicitud para incorporar cambios a una rama del proyecto.
+
+No debemos entenderlo simplemente como:
+
+> "Un botón de GitHub."
+
+Debemos entenderlo como:
+
+> "Quiero que revisen mis cambios antes de incorporarlos al proyecto."
+
+Esto introduce una práctica profesional:
+
+```text
+Crear
+  ↓
+Revisar
+  ↓
+Corregir
+  ↓
+Integrar
+```
+
+---
+
+# 31. 👀 Revisión entre compañeros
+
+Cada estudiante tendrá un compañero revisor.
+
+El revisor deberá comprobar:
+
+### Contenido
+
+* ¿La información es correcta?
+* ¿Se entiende?
+* ¿Tiene ejemplos?
+
+### Markdown
+
+* ¿Los títulos están correctamente estructurados?
+* ¿Las listas funcionan?
+* ¿Los enlaces funcionan?
+* ¿Las tablas están correctamente construidas?
+
+### Redacción
+
+* ¿Hay errores ortográficos?
+* ¿Existen frases difíciles de comprender?
+
+### Presentación
+
+* ¿La sección mantiene coherencia con el resto?
+
+---
+
+# 32. 🧪 Reto final
+
+Cada estudiante deberá crear una sección que contenga obligatoriamente:
+
+* un título;
+* dos subtítulos;
+* dos párrafos;
+* una lista;
+* una lista numerada;
+* una palabra en negrita;
+* una palabra en cursiva;
+* un enlace;
+* una imagen;
+* una tabla;
+* una cita;
+* un bloque de código.
+
+No se trata de utilizar elementos porque sí.
+
+El estudiante debe ser capaz de explicar:
+
+> ¿Por qué utilizaste cada elemento?
+
+---
+
+# 33. 🚀 Reto adicional
+
+Una vez terminado el documento:
+
+1. Otro estudiante revisará el trabajo.
+2. Deberá encontrar al menos un error.
+3. Creará un comentario en el Pull Request.
+4. El autor corregirá el error.
+5. Actualizará el Pull Request.
+6. El revisor verificará la corrección.
+7. Se aprobará el Pull Request.
+8. Se realizará el merge.
+
+---
+
+# 34. 🧠 Lo que realmente aprendimos
+
+Aunque aparentemente la clase trató sobre Markdown, en realidad comenzamos a aprender varias tecnologías y conceptos:
+
+```text
+                    MARKDOWN
+                       │
+             ┌─────────┴─────────┐
+             │                   │
+       Documentación          GitHub
+                                 │
+                    ┌────────────┼────────────┐
+                    │            │            │
+                  Git         Pull Request   Review
+                    │            │            │
+                    └────────────┼────────────┘
+                                 │
+                           Colaboración
+```
+
+Markdown es solamente el primer componente.
+
+Posteriormente podremos incorporar:
+
+```text
+Markdown
+   ↓
+GitHub
+   ↓
+Git
+   ↓
+VS Code
+   ↓
+Programación
+   ↓
+Proyectos
+```
+
+---
+
+# 35. 📝 Evaluación
+
+La evaluación debe medir comprensión y aplicación.
+
+## Parte 1 — Conceptos
+
+El estudiante debe explicar:
+
+1. ¿Qué es Markdown?
+2. ¿Qué es un archivo `.md`?
+3. ¿Qué significa `#`?
+4. ¿Para qué sirve `**texto**`?
+5. ¿Qué es un enlace?
+6. ¿Qué es un bloque de código?
+7. ¿Qué es GitHub?
+8. ¿Qué es un commit?
+9. ¿Qué es un Pull Request?
+10. ¿Por qué revisamos los cambios?
+
+---
+
+# 36. 🧪 Parte 2 — Práctica
+
+Crear un documento denominado:
+
+```text
+mi-primer-proyecto.md
+```
+
+Debe contener:
+
+* estructura correcta;
+* títulos;
+* párrafos;
+* listas;
+* enlaces;
+* imágenes;
+* tabla;
+* código;
+* cita;
+* buena ortografía.
+
+---
+
+# 37. 👥 Parte 3 — Trabajo colaborativo
+
+El estudiante debe:
+
+* participar en el repositorio;
+* realizar cambios;
+* crear un commit;
+* crear un Pull Request;
+* revisar el trabajo de otro compañero;
+* responder a una observación;
+* corregir su documento;
+* completar el proceso de integración.
+
+---
+
+# 38. 📊 Rúbrica
+
+| Criterio                 | Puntuación |
+| ------------------------ | ---------: |
+| Comprensión de Markdown  |         10 |
+| Estructura del documento |         10 |
+| Uso correcto de Markdown |         15 |
+| Calidad del contenido    |         15 |
+| Ortografía y redacción   |         10 |
+| Uso de GitHub            |         10 |
+| Commit                   |         10 |
+| Pull Request             |         10 |
+| Revisión de compañero    |          5 |
+| Trabajo colaborativo     |          5 |
+| **Total**                |    **100** |
+
+---
+
+# 39. 🧠 Autoevaluación
+
+Antes de terminar, el estudiante debe responder:
+
+### ¿Puedo crear un documento Markdown desde cero?
+
+☐ Sí
+☐ Necesito practicar
+
+### ¿Puedo crear títulos?
+
+☐ Sí
+☐ Necesito practicar
+
+### ¿Puedo crear listas?
+
+☐ Sí
+☐ Necesito practicar
+
+### ¿Puedo crear enlaces?
+
+☐ Sí
+☐ Necesito practicar
+
+### ¿Puedo crear tablas?
+
+☐ Sí
+☐ Necesito practicar
+
+### ¿Entiendo qué es un commit?
+
+☐ Sí
+☐ Necesito practicar
+
+### ¿Entiendo qué es un Pull Request?
+
+☐ Sí
+☐ Necesito practicar
+
+### ¿Puedo colaborar en un repositorio?
+
+☐ Sí
+☐ Necesito practicar
+
+---
+
+# 40. 🎯 Resultado esperado
+
+Al finalizar la clase, cada estudiante debería haber pasado de:
+
+```text
+"No sé programar."
+```
+
+a:
+
+```text
+"Puedo crear un documento estructurado."
+```
+
+y posteriormente:
+
+```text
+"Puedo colaborar con otras personas
+en un proyecto utilizando GitHub."
+```
+
+Ese es el verdadero objetivo de esta primera experiencia.
+
+---
+
+# 41. ➡️ Siguiente clase
+
+La siguiente etapa será:
+
+**Git y GitHub desde cero.**
+
+Comenzaremos explicando:
+
+```text
+¿Qué es Git?
+      ↓
+¿Qué problema resuelve?
+      ↓
+¿Qué es un repositorio?
+      ↓
+¿Qué es una rama?
+      ↓
+¿Qué es un commit?
+      ↓
+¿Qué es un Pull Request?
+      ↓
+¿Qué es un Merge?
+      ↓
+¿Cómo resolver un conflicto?
+```
+
+El estudiante no debería aprender estos conceptos como comandos para memorizar.
+
+Primero debe comprender **qué problema resuelve cada uno**.
+
+---
+
+# 42. 💡 Mensaje final para el estudiante
+
+> No necesitas saber programar para comenzar a utilizar herramientas de desarrollo.
+>
+> Primero aprenderás a crear documentos.
+>
+> Después aprenderás a compartirlos.
+>
+> Luego aprenderás a trabajar con otras personas.
+>
+> Finalmente aprenderás cómo estas mismas herramientas forman parte del trabajo profesional de programación, datos e inteligencia artificial.
