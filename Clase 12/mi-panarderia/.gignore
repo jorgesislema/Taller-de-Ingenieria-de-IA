@@ -1,0 +1,9 @@
+# Ignore virtual environment folders
+.venv/
+__pycache__/
+*.pyc
+*.md.local
+
+# Ignore practice outputs
+pruebas/output/
+*.pdf
